@@ -1,0 +1,1049 @@
+{
+  "versao_esquema": "1.0",
+  "dicionario_compativel": "1.7",
+  "dados_pessoais": {
+    "nome": "Candidato Exemplo",
+    "nascimento": "1990-03-10",
+    "estado_civil": "Solteiro",
+    "cidade": "São Paulo - SP",
+    "telefone": "(11) 90000-0000",
+    "email": "candidato@exemplo.com",
+    "linkedin": null,
+    "cidade_en": "São Paulo, SP, Brazil"
+  },
+  "objetivo_areas": [
+    "ia_prompt",
+    "produto_qa",
+    "ti_suporte",
+    "dados_bi"
+  ],
+  "formacoes": [
+    {
+      "id": "form_mecatronica",
+      "nivel": "superior_completo",
+      "tipo": "Tecnólogo",
+      "curso": "Tecnologia em Mecatrônica Industrial",
+      "curso_id": "mecatronica",
+      "instituicao": "Faculdade Exemplo",
+      "inicio": "2014",
+      "fim": "2017",
+      "situacao": "concluido",
+      "tipo_en": "Associate degree (Tecnólogo)",
+      "curso_en": "Industrial Mechatronics Technology"
+    }
+  ],
+  "experiencias": [
+    {
+      "id": "exp_idealizador",
+      "tipo": "profissional",
+      "vinculo": "autônomo",
+      "empresa": "Projetos próprios",
+      "cargo": "Idealizador de produtos digitais com IA",
+      "inicio": "2026-03",
+      "fim": null,
+      "areas": [
+        "ia_prompt",
+        "produto_qa"
+      ],
+      "atividades": [
+        {
+          "texto": "Trilha: motor que gera apps de estudo personalizados, com 4 apps publicados.",
+          "habilidades": [
+            "gestao_produto",
+            "ia_generativa"
+          ],
+          "texto_en": "Trilha: engine that generates personalized study apps, with 4 apps published."
+        },
+        {
+          "texto": "Elicitação de requisitos (RF/RNF) e regras de negócio, escopo de MVP e priorização de backlog.",
+          "habilidades": [
+            "requisitos",
+            "gestao_produto"
+          ],
+          "texto_en": "Requirements elicitation (functional and non-functional) and business rules, MVP scoping and backlog prioritization."
+        },
+        {
+          "texto": "Engenharia de prompt para LLM: system prompt, structured output em JSON com validação e guardrails contra alucinação.",
+          "habilidades": [
+            "engenharia_prompt",
+            "saida_estruturada",
+            "guardrails_avaliacao",
+            "ia_generativa"
+          ],
+          "texto_en": "Prompt engineering for LLMs: system prompts, structured JSON output with validation and guardrails against hallucination."
+        },
+        {
+          "texto": "Testes E2E antes de cada release e correção de bugs vistos em uso real.",
+          "habilidades": [
+            "qa_testes",
+            "avaliacao_produto"
+          ],
+          "texto_en": "E2E testing before each release and fixes for bugs seen in real use."
+        },
+        {
+          "texto": "Documentação técnica: registro de decisões (ADR) e estudos de caso.",
+          "habilidades": [
+            "documentacao_tecnica"
+          ],
+          "texto_en": "Technical documentation: decision log (ADR) and case studies."
+        },
+        {
+          "texto": "Código desenvolvido com assistência de IA (Claude).",
+          "habilidades": [
+            "dev_assistido_ia"
+          ],
+          "texto_en": "Code developed with AI assistance (Claude).",
+          "fixa": true
+        }
+      ],
+      "habilidades": [
+        "gestao_produto",
+        "ia_generativa",
+        "requisitos",
+        "engenharia_prompt",
+        "saida_estruturada",
+        "guardrails_avaliacao",
+        "qa_testes",
+        "avaliacao_produto",
+        "documentacao_tecnica",
+        "dev_assistido_ia"
+      ],
+      "ferramentas": [
+        "claude"
+      ],
+      "observacao": "trabalho autônomo remunerado (apps do Trilha); a remuneração não é declarada no currículo",
+      "cargo_en": "Creator of AI-powered digital products",
+      "empresa_en": "Own projects",
+      "vinculo_en": "self-employed"
+    },
+    {
+      "id": "exp_uber",
+      "tipo": "profissional",
+      "vinculo": "autônomo",
+      "empresa": "Aplicativo de transporte",
+      "cargo": "Motorista de aplicativo",
+      "inicio": "2019-06",
+      "fim": null,
+      "areas": [],
+      "atividades": [
+        {
+          "texto": "Transporte de passageiros com atendimento direto ao cliente (nota 4,99, mais de 10 mil corridas).",
+          "habilidades": [
+            "atendimento_cliente",
+            "cnh",
+            "cnh_ear"
+          ],
+          "texto_en": "Passenger transportation with direct customer service (4.99 rating, more than 10,000 rides)."
+        },
+        {
+          "texto": "Análise de custos operacionais do veículo (combustível, manutenção, IPVA, licenciamento, financiamento) e cálculo de custo por km e por dia.",
+          "habilidades": [
+            "analise_custos"
+          ],
+          "texto_en": "Analysis of vehicle operating costs (fuel, maintenance, taxes, licensing, financing) and calculation of cost per km and per day."
+        },
+        {
+          "texto": "Precificação mínima por km e por hora, com margem de lucro, como critério de aceite de corridas.",
+          "habilidades": [
+            "analise_custos"
+          ],
+          "texto_en": "Minimum pricing per km and per hour, including profit margin, used as the criterion for accepting rides."
+        },
+        {
+          "texto": "Acompanhamento de indicadores de desempenho (KPIs: ganho por km e por hora) com o aplicativo Copiloto.",
+          "habilidades": [
+            "gestao_indicadores"
+          ],
+          "texto_en": "Tracking of performance indicators (KPIs: revenue per km and per hour) with the Copiloto app."
+        },
+        {
+          "texto": "Análise exploratória de dados (EDA) de corridas e ofertas, com apoio de IA, para identificar regiões e horários mais rentáveis na região metropolitana.",
+          "habilidades": [
+            "analise_dados"
+          ],
+          "texto_en": "Exploratory data analysis (EDA) of ride and offer data, with AI support, to identify the most profitable areas and times in the metro area."
+        }
+      ],
+      "habilidades": [
+        "atendimento_cliente",
+        "analise_custos",
+        "gestao_indicadores",
+        "cnh",
+        "cnh_ear"
+      ],
+      "habilidades_pontuais": [
+        "analise_dados"
+      ],
+      "cargo_en": "Ride-hailing driver",
+      "empresa_en": "Ride-hailing app",
+      "vinculo_en": "self-employed"
+    },
+    {
+      "id": "exp_reforco",
+      "tipo": "profissional",
+      "vinculo": "autônomo",
+      "empresa": "Aulas particulares",
+      "cargo": "Professor de reforço escolar (português e matemática)",
+      "inicio": "2022-01",
+      "fim": null,
+      "areas": [
+        "educacao"
+      ],
+      "atividades": [
+        {
+          "texto": "Diagnóstico de dificuldades de aprendizagem e plano de ensino personalizado para alunos de 6 a 12 anos.",
+          "habilidades": [
+            "docencia",
+            "treinamento"
+          ],
+          "texto_en": "Diagnosis of learning difficulties and personalized teaching plans for students aged 6 to 12."
+        },
+        {
+          "texto": "Desenvolvimento de leitura, interpretação de texto e raciocínio lógico-matemático, com abordagem lúdica ou estruturada conforme o aluno.",
+          "habilidades": [
+            "comportamental",
+            "docencia",
+            "treinamento"
+          ],
+          "texto_en": "Development of reading, text comprehension and logical-mathematical reasoning, using playful or structured approaches depending on the student."
+        },
+        {
+          "texto": "Aulas com o princípio da técnica de Feynman (o aluno explica o conteúdo com as próprias palavras, para entender e não só decorar) e revisões espaçadas baseadas em Ebbinghaus e Leitner.",
+          "habilidades": [
+            "docencia",
+            "treinamento"
+          ],
+          "texto_en": "Lessons based on the Feynman technique (students explain the content in their own words, to understand rather than memorize) and spaced reviews based on Ebbinghaus and Leitner."
+        },
+        {
+          "texto": "Dois alunos atendidos, ambos com o reforço concluído.",
+          "habilidades": [
+            "docencia"
+          ],
+          "texto_en": "Two students tutored, both completed the program."
+        }
+      ],
+      "habilidades": [
+        "treinamento",
+        "comportamental",
+        "docencia"
+      ],
+      "cargo_en": "Private tutor (Portuguese and mathematics)",
+      "empresa_en": "Private lessons",
+      "vinculo_en": "self-employed"
+    },
+    {
+      "id": "exp_autopecas",
+      "tipo": "profissional",
+      "vinculo": "informal",
+      "empresa": "Comércio de autopeças e oficina mecânica",
+      "cargo": "Gestor de estoque",
+      "inicio": "2024-10",
+      "fim": "2025-03",
+      "areas": [
+        "logistica",
+        "administrativo_financeiro",
+        "comercial"
+      ],
+      "atividades": [
+        {
+          "texto": "Gestão do estoque físico de peças e fluidos, recebimento, armazenagem e reposição para a oficina.",
+          "habilidades": [
+            "gestao_estoque",
+            "armazenagem"
+          ],
+          "texto_en": "Management of physical stock of parts and fluids, receiving, storage and replenishment for the repair shop."
+        },
+        {
+          "texto": "Cadastro de produtos (SKUs), atualização da tabela de preços e conciliação entre estoque físico e sistema.",
+          "habilidades": [
+            "rotinas_administrativas",
+            "analise_custos",
+            "gestao_estoque"
+          ],
+          "texto_en": "Product registration (SKUs), price list updates and reconciliation between physical stock and the system."
+        },
+        {
+          "texto": "Vendas e atendimento no balcão.",
+          "habilidades": [
+            "atendimento_cliente"
+          ],
+          "texto_en": "Counter sales and customer service."
+        },
+        {
+          "texto": "Pesquisa de preços de mercado para apoiar a negociação com fornecedores.",
+          "habilidades": [
+            "compras_suprimentos"
+          ],
+          "texto_en": "Market price research to support supplier negotiations."
+        },
+        {
+          "texto": "Emissão de notas fiscais, apoio à contabilidade, fechamento de caixa e acompanhamento do resultado diário.",
+          "habilidades": [
+            "documentacao_fiscal",
+            "financeiro"
+          ],
+          "texto_en": "Issuing invoices, accounting support, cash closing and daily results tracking."
+        }
+      ],
+      "habilidades": [
+        "gestao_estoque",
+        "armazenagem",
+        "compras_suprimentos",
+        "documentacao_fiscal",
+        "atendimento_cliente",
+        "analise_custos",
+        "rotinas_administrativas",
+        "financeiro"
+      ],
+      "cargo_en": "Inventory manager",
+      "empresa_en": "Auto parts store and repair shop",
+      "vinculo_en": "informal"
+    },
+    {
+      "id": "exp_penske",
+      "tipo": "profissional",
+      "vinculo": "CLT",
+      "empresa": "Operador Logístico Exemplo (centro de distribuição)",
+      "cargo": "Auxiliar de Logística",
+      "inicio": "2021-01",
+      "fim": "2021-03",
+      "areas": [
+        "logistica"
+      ],
+      "atividades": [
+        {
+          "texto": "Recebimento de mercadorias: descarga, contagem e apoio à conferência de carga.",
+          "habilidades": [
+            "armazenagem"
+          ],
+          "texto_en": "Receiving: unloading, counting and support for load checking."
+        },
+        {
+          "texto": "Picking de pedidos urgentes para entrega no mesmo dia: coleta, conferência e reconferência entre físico e sistema, com envio para expedição.",
+          "habilidades": [
+            "armazenagem",
+            "gestao_estoque",
+            "equipamentos_operacao",
+            "wms"
+          ],
+          "texto_en": "Same-day urgent order picking: collection, checking and re-checking between physical stock and the system, with dispatch to shipping."
+        },
+        {
+          "texto": "Identificou falha de controle no sistema do coletor do WMS (lançamentos sem validação) e fez o reporte à liderança (bug report); a falha foi corrigida.",
+          "habilidades": [
+            "equipamentos_operacao",
+            "wms"
+          ],
+          "destacar_em": [
+            "qa_testes",
+            "avaliacao_produto"
+          ],
+          "texto_en": "Identified a control flaw in the WMS handheld scanner system (entries without validation) and reported it to management (bug report); the flaw was fixed."
+        },
+        {
+          "texto": "Apoio ao inventário na conciliação entre estoque físico e sistema (SAP e WMS).",
+          "habilidades": [
+            "gestao_estoque",
+            "erp",
+            "wms"
+          ],
+          "texto_en": "Support to the inventory team in reconciling physical stock with the system (SAP and WMS)."
+        }
+      ],
+      "habilidades": [
+        "armazenagem",
+        "gestao_estoque",
+        "erp",
+        "wms",
+        "equipamentos_operacao"
+      ],
+      "ferramentas": [
+        "sap"
+      ],
+      "cargo_en": "Logistics assistant",
+      "empresa_en": "Example Logistics Operator (distribution center)",
+      "vinculo_en": ""
+    },
+    {
+      "id": "exp_starcnc",
+      "tipo": "profissional",
+      "vinculo": "informal",
+      "empresa": "Fábrica Exemplo CNC",
+      "cargo": "Desenhista mecânico (início como auxiliar)",
+      "inicio": "2015-08",
+      "fim": "2016-04",
+      "areas": [
+        "industria_mecanica"
+      ],
+      "atividades": [
+        {
+          "texto": "Desenho e modelagem em SolidWorks, apoiando os engenheiros mecânicos no projeto de máquinas CNC.",
+          "habilidades": [
+            "desenho_tecnico",
+            "projetos_maquinas"
+          ],
+          "texto_en": "Drawing and 3D modeling in SolidWorks, supporting mechanical engineers in the design of CNC machines."
+        }
+      ],
+      "habilidades": [
+        "desenho_tecnico",
+        "projetos_maquinas"
+      ],
+      "ferramentas": [
+        "solidworks"
+      ],
+      "cargo_en": "Mechanical drafter (started as assistant)",
+      "empresa_en": "Example CNC Factory",
+      "vinculo_en": "informal"
+    }
+  ],
+  "projetos": [
+    {
+      "id": "proj_rota",
+      "tipo": "projeto_assistido_ia",
+      "nome": "Trilha: motor de apps de estudo com IA",
+      "inicio": "2026-03",
+      "fim": null,
+      "papel": "Idealizador e responsável pelo produto",
+      "descricao": "Motor que gera apps de estudo personalizados (4 publicados), com diagnóstico do aluno, trilha adaptativa, conteúdo gerado por IA e progresso por usuário. Nasceu da metodologia que usei nas minhas aprovações em concursos e se apoia em métodos de aprendizagem estabelecidos: gamificação, técnica de Feynman e revisão espaçada (Ebbinghaus e Leitner). Código desenvolvido com assistência de IA (Claude).",
+      "tecnologias_usadas": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python (build)",
+        "Claude",
+        "Playwright"
+      ],
+      "habilidades": [
+        "requisitos",
+        "gestao_produto",
+        "qa_testes",
+        "documentacao_tecnica",
+        "ux_ui",
+        "engenharia_prompt",
+        "ia_generativa",
+        "saida_estruturada",
+        "guardrails_avaliacao",
+        "dev_assistido_ia",
+        "automacao_testes",
+        "avaliacao_produto"
+      ],
+      "ferramentas": [
+        "playwright",
+        "claude"
+      ],
+      "observacao_data": "início entre fevereiro e março de 2026; usado março (estimativa conservadora)",
+      "origem": "Nasceu da metodologia de estudo que usei nas minhas aprovações em concursos e da dificuldade de quem estuda sozinho com excesso de material.",
+      "topicos": [
+        {
+          "texto": "Diagnóstico do aluno com autoavaliação de confiança e peso de cada assunto calculado a partir das provas anteriores da banca.",
+          "habilidades": [
+            "requisitos",
+            "gestao_produto"
+          ],
+          "texto_en": "Student diagnosis with confidence self-assessment, and topic weights calculated from the exam board's past tests."
+        },
+        {
+          "texto": "Geração de aulas, questões e planos de sessão por LLM, com structured output em JSON validado no app e descarte de conteúdo malformado.",
+          "habilidades": [
+            "engenharia_prompt",
+            "saida_estruturada",
+            "ia_generativa"
+          ],
+          "texto_en": "LLM-generated lessons, questions and session plans, with structured JSON output validated in the app and malformed content discarded."
+        },
+        {
+          "texto": "Guardrails: regra ética no app de cibersegurança e allowlist de links, para o modelo não inventar URLs.",
+          "habilidades": [
+            "guardrails_avaliacao",
+            "engenharia_prompt"
+          ],
+          "texto_en": "Guardrails: an ethics rule in the cybersecurity app and a link allowlist, so the model does not invent URLs."
+        },
+        {
+          "texto": "Motor único configurado por ficha: uma melhoria passa para todos os apps no build seguinte.",
+          "habilidades": [
+            "requisitos",
+            "gestao_produto"
+          ],
+          "texto_en": "Single engine configured per app: an improvement reaches every app in the next build."
+        },
+        {
+          "texto": "Testes E2E antes de cada release e correção de bugs vistos em uso real, como progresso perdido e respostas equivalentes recusadas.",
+          "habilidades": [
+            "qa_testes",
+            "avaliacao_produto"
+          ],
+          "texto_en": "E2E tests before each release and fixes for bugs seen in real use, such as lost progress and rejected equivalent answers."
+        },
+        {
+          "texto": "Interface mobile-first com trilha gamificada, revisões espaçadas e fechamento de cada aula pela técnica de Feynman.",
+          "habilidades": [
+            "ux_ui"
+          ],
+          "texto_en": "Mobile-first interface with a gamified path, spaced reviews and a Feynman-technique wrap-up for each lesson."
+        }
+      ],
+      "situacao": "em_uso",
+      "nome_en": "Trilha: AI-powered study app engine",
+      "descricao_en": "Engine that generates personalized study apps (4 published), with student diagnosis, adaptive learning path, AI-generated content and per-user progress. Born from the method I used to pass public service exams and grounded in established learning methods: gamification, the Feynman technique and spaced repetition (Ebbinghaus and Leitner). Code developed with AI assistance (Claude).",
+      "papel_en": "Creator and product owner",
+      "origem_en": "Born from the study method I used to pass public service exams and from the struggle of self-learners overwhelmed by material.",
+      "base": "trilha de aprendizagem com gamificação, aprendizado interativo e personalização por IA, que ajusta o ritmo conforme o desempenho nos exercícios das aulas, no fim de cada módulo e nas revisões; aulas apoiadas no princípio da técnica de Feynman (entender e aprender, não só decorar); revisão espaçada baseada na curva do esquecimento de Ebbinghaus e no sistema de Leitner.",
+      "base_en": "gamified learning path, interactive learning and AI personalization that adjusts the pace to performance in lesson exercises, end-of-module checks and reviews; lessons grounded in the Feynman technique (understanding, not memorizing); spaced repetition based on Ebbinghaus's forgetting curve and the Leitner system.",
+      "base_rotulo": "Base metodológica",
+      "base_rotulo_en": "Methodological basis"
+    },
+    {
+      "id": "proj_glosa",
+      "tipo": "projeto_assistido_ia",
+      "nome": "Verso: app de devocional bíblico",
+      "inicio": "2026-03",
+      "fim": null,
+      "papel": "Idealizador e responsável pelo produto",
+      "descricao": "App web gratuito que responde a um texto bíblico ou a uma situação pessoal com a Escritura parafraseada e referências para conferência. Nasceu de uma necessidade minha e está em uso por cerca de 8 pessoas (retorno informal). Código desenvolvido com assistência de IA (Claude).",
+      "tecnologias_usadas": [
+        "React",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Node.js",
+        "Claude"
+      ],
+      "habilidades": [
+        "requisitos",
+        "gestao_produto",
+        "qa_testes",
+        "documentacao_tecnica",
+        "engenharia_prompt",
+        "ia_generativa",
+        "saida_estruturada",
+        "guardrails_avaliacao",
+        "dev_assistido_ia",
+        "integracao_llm",
+        "avaliacao_produto",
+        "ux_ui"
+      ],
+      "observacao_data": "início entre fevereiro e março de 2026; usado março (estimativa conservadora)",
+      "topicos": [
+        {
+          "texto": "System prompt com classificação de intenção da entrada (texto bíblico ou situação pessoal) e structured output em JSON com schema definido.",
+          "habilidades": [
+            "engenharia_prompt",
+            "saida_estruturada"
+          ],
+          "texto_en": "System prompt with input intent classification (Bible passage or personal situation) and structured JSON output with a defined schema."
+        },
+        {
+          "texto": "Guardrails contra alucinação: proibição de inventar referências e paráfrase obrigatória, com a referência ao lado para conferência.",
+          "habilidades": [
+            "guardrails_avaliacao"
+          ],
+          "texto_en": "Guardrails against hallucination: no invented references and mandatory paraphrasing, with the reference shown alongside for checking."
+        },
+        {
+          "texto": "Parser tolerante que aproveita respostas truncadas do LLM, testado com 7 casos sintéticos.",
+          "habilidades": [
+            "saida_estruturada",
+            "qa_testes"
+          ],
+          "texto_en": "Tolerant parser that recovers truncated LLM responses, tested with 7 synthetic cases."
+        },
+        {
+          "texto": "Corte de escopo de 8 modos para o devocional, decidido a partir de testes de uso real.",
+          "habilidades": [
+            "gestao_produto",
+            "avaliacao_produto"
+          ],
+          "texto_en": "Scope cut from 8 modes to the devotional, decided from real-use testing."
+        },
+        {
+          "texto": "Migração da consulta para a conta de cada usuário, com caderno de consultas por pessoa e mensagens de erro específicas.",
+          "habilidades": [
+            "requisitos",
+            "gestao_produto",
+            "ux_ui"
+          ],
+          "texto_en": "Migration of queries to each user's own account, with a per-user query notebook and specific error messages."
+        }
+      ],
+      "situacao": "em_uso",
+      "nome_en": "Verso: Bible devotional web app",
+      "descricao_en": "Free web app that answers a Bible passage or a personal situation with paraphrased Scripture and references to check. Born from a need of my own and used by about 8 people (informal feedback). Code developed with AI assistance (Claude).",
+      "papel_en": "Creator and product owner",
+      "ferramentas": [
+        "claude"
+      ],
+      "origem": "Nasceu de uma necessidade minha, num momento de dúvida sobre o futuro profissional: encontrar uma palavra bíblica para uma situação real.",
+      "origem_en": "Born from a need of my own, at a time of doubt about my career: finding a Bible word for a real situation.",
+      "base": "a Escritura na tradição protestante evangélica, com paráfrase obrigatória e a referência ao lado para conferência na Bíblia.",
+      "base_en": "Scripture within the Protestant evangelical tradition, with mandatory paraphrasing and the reference alongside for checking in the Bible.",
+      "base_rotulo": "Base bíblica",
+      "base_rotulo_en": "Biblical basis"
+    },
+    {
+      "id": "proj_bjflux",
+      "tipo": "projeto_assistido_ia",
+      "nome": "Fluxo Quant: modelo sistemático de leitura de fluxo (mini índice)",
+      "inicio": "2024-11",
+      "fim": null,
+      "papel": "Idealizador e responsável pelo produto",
+      "descricao": "Transformação de uma estratégia discricionária em regras explícitas e auditáveis, a partir de três escolas do mercado financeiro: análise gráfica, leitura de fluxo (order flow) e análise quantitativa, com protocolo de validação (linha de base, amostra informada, replicação, registro append-only). Código desenvolvido com assistência de IA (Claude Code).",
+      "tecnologias_usadas": [
+        "NTSL (Nelogica)",
+        "Python",
+        "Gemini",
+        "ChatGPT",
+        "Claude Code"
+      ],
+      "habilidades": [
+        "requisitos",
+        "documentacao_tecnica",
+        "guardrails_avaliacao",
+        "dev_assistido_ia",
+        "python",
+        "engenharia_prompt",
+        "ia_generativa",
+        "qa_testes",
+        "avaliacao_produto"
+      ],
+      "topicos": [
+        {
+          "texto": "Tradução de uma estratégia discricionária em regras explícitas, parametrizadas e auditáveis.",
+          "habilidades": [
+            "requisitos",
+            "documentacao_tecnica"
+          ],
+          "texto_en": "Translation of a discretionary strategy into explicit, parameterized and auditable rules."
+        },
+        {
+          "texto": "Protocolo de validação: baseline obrigatória, tamanho de amostra (n) em cada resultado, replicação em blocos e log append-only.",
+          "habilidades": [
+            "guardrails_avaliacao",
+            "documentacao_tecnica"
+          ],
+          "texto_en": "Validation protocol: mandatory baseline, sample size (n) reported with every result, block replication and an append-only log."
+        },
+        {
+          "texto": "Governança do trabalho com IA: rótulo da natureza de cada afirmação e proibição de explicação inventada.",
+          "habilidades": [
+            "guardrails_avaliacao",
+            "engenharia_prompt"
+          ],
+          "texto_en": "Governance of AI-assisted work: every claim labeled by its nature and invented explanations forbidden."
+        },
+        {
+          "texto": "Conferência gatilho a gatilho entre o sistema na plataforma e a réplica de medição, com relato de divergências que viraram investigações.",
+          "habilidades": [
+            "qa_testes",
+            "avaliacao_produto"
+          ],
+          "texto_en": "Trigger-by-trigger cross-check between the platform system and the measurement replica, with discrepancies reported and turned into investigations."
+        }
+      ],
+      "situacao": "em_uso",
+      "nome_en": "Fluxo Quant: systematic order-flow reading model (Brazilian mini index futures)",
+      "descricao_en": "Translation of a discretionary strategy into explicit, auditable rules, built on three schools of financial markets: chart analysis, order flow reading and quantitative analysis, with a validation protocol (baseline, reported sample size, replication, append-only log). Code developed with AI assistance (Claude Code).",
+      "papel_en": "Creator and product owner",
+      "ferramentas": [
+        "chatgpt",
+        "gemini",
+        "claude",
+        "claude_code"
+      ],
+      "origem": "Nasceu da minha estratégia discricionária de operação: a regra estava na minha cabeça e não podia ser testada nem reproduzida.",
+      "origem_en": "Born from my own discretionary trading strategy: the rules lived in my head and could not be tested or reproduced.",
+      "base": "três escolas do mercado financeiro: análise gráfica (gráfico Renko), leitura de fluxo (order flow: agressão, book de ofertas e perfil de volume) e análise quantitativa (linha de base, replicação em blocos e ablação de regras).",
+      "base_en": "three schools of financial markets: chart analysis (Renko charts), order flow reading (aggression, order book and volume profile) and quantitative analysis (baseline, block replication and rule ablation).",
+      "base_rotulo": "Base metodológica",
+      "base_rotulo_en": "Methodological basis"
+    },
+    {
+      "id": "proj_curriculo",
+      "tipo": "projeto_assistido_ia",
+      "nome": "Sistema de compatibilidade de currículo",
+      "inicio": "2026-11",
+      "fim": null,
+      "papel": "Idealizador e responsável pelo produto",
+      "descricao": "Extensão do Chrome em uso, nascida da minha própria busca por emprego, que cruza o perfil do candidato com os requisitos da vaga por regras transparentes, sem IA, e gera currículo sob medida em português ou inglês, em PDF e Word. Testada em 10 vagas reais. Código desenvolvido com assistência de IA (Claude).",
+      "tecnologias_usadas": [
+        "JavaScript",
+        "Chrome Extension (Manifest V3)",
+        "Python",
+        "JSON",
+        "JSON Schema",
+        "Node.js",
+        "Playwright",
+        "Claude"
+      ],
+      "habilidades": [
+        "requisitos",
+        "gestao_produto",
+        "qa_testes",
+        "engenharia_prompt",
+        "dev_assistido_ia",
+        "avaliacao_produto",
+        "documentacao_tecnica",
+        "ux_ui"
+      ],
+      "topicos": [
+        {
+          "texto": "Motor rule-based e data-driven, sem IA, com dicionário em JSON de mais de 1.400 termos em 10 áreas.",
+          "habilidades": [
+            "requisitos",
+            "gestao_produto"
+          ],
+          "texto_en": "Rule-based, data-driven matching engine, no AI, with a JSON dictionary of more than 1,400 terms across 10 areas."
+        },
+        {
+          "texto": "Regras de honestidade: só conta habilidade com evidência, e código escrito por IA não comprova autoria.",
+          "habilidades": [
+            "requisitos"
+          ],
+          "texto_en": "Honesty rules: a skill only counts with evidence, and AI-written code does not prove authorship."
+        },
+        {
+          "texto": "Testes de regressão e teste de mutação: cada erro corrigido vira um teste permanente, em Python e em JavaScript.",
+          "habilidades": [
+            "qa_testes",
+            "avaliacao_produto"
+          ],
+          "texto_en": "Regression and mutation testing: every fixed bug becomes a permanent test, in Python and JavaScript."
+        },
+        {
+          "texto": "Extensão do Chrome que analisa a vaga selecionada e gera currículo em PDF e Word.",
+          "habilidades": [
+            "gestao_produto"
+          ],
+          "texto_en": "Chrome extension that analyzes the selected job posting and generates a resume in PDF and Word."
+        },
+        {
+          "texto": "Registro de decisões técnicas no formato ADR, com o motivo e a alternativa descartada de cada escolha.",
+          "habilidades": [
+            "documentacao_tecnica"
+          ],
+          "texto_en": "Technical decision log in ADR format, with the reason and the discarded alternative for each choice."
+        },
+        {
+          "texto": "Proteção de cobertura: quando o sistema reconhece poucas linhas da vaga, o percentual é marcado como não confiável, criada após um 100% falso em vaga real.",
+          "habilidades": [
+            "qa_testes",
+            "avaliacao_produto"
+          ],
+          "texto_en": "Coverage safeguard: when the system recognizes few lines of the job posting, the score is flagged as unreliable, created after a false 100% on a real posting."
+        },
+        {
+          "texto": "Currículo em português e inglês a partir de textos revisados no perfil, sem tradução automática, com teste que barra palavras em português na versão em inglês.",
+          "habilidades": [
+            "requisitos",
+            "qa_testes"
+          ],
+          "texto_en": "Resume in Portuguese and English built from texts reviewed in the profile, without machine translation, with a test that blocks Portuguese words in the English version."
+        },
+        {
+          "texto": "Direção visual da interface (tipografia de código, cores do Python, tema claro, escuro ou automático) com revisão de cada tela por capturas.",
+          "habilidades": [
+            "ux_ui"
+          ],
+          "texto_en": "Interface visual direction (code typography, Python colors, light, dark or automatic theme) with every screen reviewed through screenshots."
+        }
+      ],
+      "situacao": "em_uso",
+      "nome_en": "Job match and resume system",
+      "descricao_en": "Chrome extension in use, born from my own job search, that matches the candidate profile to job requirements through transparent, AI-free rules and generates a tailored resume in Portuguese or English, in PDF and Word. Tested on 10 real job postings. Code developed with AI assistance (Claude).",
+      "papel_en": "Creator and product owner",
+      "origem": "Nasceu da minha própria busca por emprego: medir a compatibilidade com cada vaga e enviar um currículo verdadeiro e sob medida.",
+      "origem_en": "Born from my own job search: measuring fit with each posting and sending a truthful, tailored resume.",
+      "base_rotulo": "Como funciona",
+      "base_rotulo_en": "How it works",
+      "base": "reúne numa única tela a avaliação de vagas de vários sites. A extensão do Chrome lê os requisitos selecionados na própria página e mostra o percentual, o que o perfil comprova (por experiência ou projeto) e o que falta. A decisão de se candidatar é do usuário; se ele seguir, o currículo é gerado na hora, só com o que comprova.",
+      "base_en": "brings the evaluation of job postings from many sites into a single screen. The Chrome extension reads the requirements selected on the page itself and shows the match score, what the profile proves (through experience or projects) and what is missing. The decision to apply is the user's; if they go ahead, the resume is generated instantly, with only what they can prove."
+    }
+  ],
+  "cursos": [
+    {
+      "id": "curso_senai_desenho",
+      "tipo": "curso_concluido",
+      "nome": "Desenho Técnico Mecânico (SolidWorks e AutoCAD 2D)",
+      "instituicao": "Escola Técnica Exemplo",
+      "carga": "aprendizagem industrial, cerca de 2,5 meses",
+      "habilidades": [
+        "desenho_tecnico"
+      ],
+      "ferramentas": [
+        "solidworks",
+        "autocad"
+      ],
+      "nome_en": "Mechanical Technical Drawing (SolidWorks and AutoCAD 2D)"
+    },
+    {
+      "id": "curso_senai_qualidade",
+      "tipo": "curso_concluido",
+      "nome": "Assistente da Qualidade",
+      "instituicao": "Escola Técnica Exemplo",
+      "carga": "aprendizagem industrial, cerca de 2,5 meses",
+      "habilidades": [
+        "processos_documentacao"
+      ],
+      "nome_en": "Quality Assistant"
+    },
+    {
+      "id": "curso_eurodata",
+      "tipo": "curso_concluido",
+      "nome": "Informática completo",
+      "instituicao": "Escola de Informática Exemplo",
+      "habilidades": [
+        "pacote_office",
+        "windows",
+        "hardware",
+        "excel"
+      ],
+      "nome_en": "Computer skills (complete course)"
+    },
+    {
+      "id": "curso_santander_dados",
+      "tipo": "curso_andamento",
+      "nome": "Bootcamp Dados com Python e IA",
+      "instituicao": "Academia Online Exemplo",
+      "inicio": "2026-11",
+      "previsao_fim": "2027-02",
+      "habilidades": [
+        "python",
+        "analise_dados"
+      ],
+      "nome_en": "Bootcamp Data with Python and AI"
+    },
+    {
+      "id": "curso_santander_agentes",
+      "tipo": "curso_andamento",
+      "nome": "Bootcamp Criação de Agentes de IA",
+      "instituicao": "Academia Online Exemplo",
+      "inicio": "2026-11",
+      "previsao_fim": "2027-02",
+      "habilidades": [
+        "agentes_ia"
+      ],
+      "nome_en": "Bootcamp Building AI Agents"
+    },
+    {
+      "id": "curso_hackers_do_bem",
+      "tipo": "curso_andamento",
+      "nome": "Ciber Exemplo: nivelamento em cibersegurança (próximo módulo: básico)",
+      "instituicao": "Programa Ciber Exemplo",
+      "situacao_detalhe": "finalizando o nivelamento; próximo módulo: básico",
+      "habilidades": [
+        "seguranca_informacao"
+      ],
+      "nome_en": "Ciber Exemplo: cybersecurity foundations (next module: basic)"
+    },
+    {
+      "id": "curso_ingles_autodidata",
+      "tipo": "curso_andamento",
+      "nome": "Inglês: estudo autodidata",
+      "habilidades": [
+        "ingles"
+      ],
+      "nome_en": "English: self-study"
+    },
+    {
+      "id": "curso_espanhol_autodidata",
+      "tipo": "curso_andamento",
+      "nome": "Espanhol: estudo autodidata",
+      "habilidades": [
+        "espanhol"
+      ],
+      "nome_en": "Spanish: self-study"
+    }
+  ],
+  "atividades_academicas": [
+    {
+      "texto": "Auxiliar de laboratório de Desenho Técnico/SolidWorks na faculdade, com aproveitamento da disciplina por domínio prévio do conteúdo.",
+      "destacar_em": [
+        "desenho_tecnico"
+      ],
+      "texto_en": "Lab assistant in Technical Drawing/SolidWorks at college, with course credit granted for prior mastery of the content."
+    }
+  ],
+  "habilidades_com_nivel": {
+    "excel": {
+      "nivel": 2,
+      "detalhe": "fórmulas, PROCV, tabela dinâmica e gráficos",
+      "evidencias": [
+        "curso_eurodata"
+      ]
+    },
+    "ingles": {
+      "nivel": 1,
+      "detalhe": "A1 no teste EF SET; estudo em andamento",
+      "detalhe_en": "A1 on the EF SET test; currently studying",
+      "evidencias": [
+        "declaracao_nivel"
+      ]
+    },
+    "cnh": {
+      "categoria": "AB",
+      "ear": true,
+      "evidencias": [
+        "documento"
+      ]
+    },
+    "espanhol": {
+      "nivel": 2,
+      "detalhe": "B1 no teste de espanhol da EF; estudo em andamento",
+      "detalhe_en": "B1 on the EF Spanish test; currently studying",
+      "evidencias": [
+        "declaracao_nivel"
+      ]
+    }
+  },
+  "lacunas": [
+    "Inglês acima do básico (hoje: A1 no teste EF SET; estudando)",
+    "Programação escrita por conta própria (Python ainda em formação)",
+    "SQL",
+    "RAG, fine-tuning e automações com n8n/Make/Zapier",
+    "Experiência profissional formal em TI, dados ou produto",
+    "Metodologias ágeis em equipe (Scrum)",
+    "Manutenção e automação industrial (CLP, pneumática, hidráulica, comandos elétricos): estudado na faculdade até 2017, sem prática desde então; não marcado como habilidade",
+    "Evals de LLM com golden dataset e métricas (acerto, taxa de alucinação)",
+    "Testes de segurança de LLM (prompt injection, OWASP Top 10 para LLM)"
+  ],
+  "ferramentas_ia_usadas": {
+    "ChatGPT": "licença paga, até abril de 2025, no Fluxo Quant; uso como ferramenta de trabalho, sem integração por código",
+    "Gemini": "gratuito, antes de 2025, no Fluxo Quant; uso como ferramenta de trabalho",
+    "Claude": "desde abril de 2025 (aproximado), em todos os projetos",
+    "Claude Code": "no Fluxo Quant"
+  },
+  "objetivo_areas_observacao": "Apenas informativo: o motor avalia qualquer vaga, de qualquer área; este campo não filtra nada.",
+  "conquistas": [
+    "Aprovado em concurso público estadual"
+  ],
+  "frases_resumo": [
+    {
+      "texto": "Criação, com assistência de IA, de produtos digitais próprios em uso real há cerca de 2 anos, entre eles 4 apps de estudo publicados.",
+      "habilidades": [
+        "ia_generativa",
+        "dev_assistido_ia",
+        "gestao_produto"
+      ],
+      "texto_en": "AI-assisted creation of my own digital products in real use for about 2 years, including 4 published study apps."
+    },
+    {
+      "texto": "Engenharia de prompt para LLM: system prompt, structured output em JSON com validação por schema e guardrails contra alucinação.",
+      "habilidades": [
+        "engenharia_prompt",
+        "saida_estruturada",
+        "guardrails_avaliacao"
+      ],
+      "texto_en": "Prompt engineering for LLMs: system prompts, structured JSON output with schema validation and guardrails against hallucination."
+    },
+    {
+      "texto": "Elicitação de requisitos (RF/RNF) e regras de negócio, escopo de MVP e priorização de backlog.",
+      "habilidades": [
+        "requisitos",
+        "gestao_produto"
+      ],
+      "texto_en": "Requirements elicitation (functional and non-functional) and business rules, MVP scoping and backlog prioritization."
+    },
+    {
+      "texto": "Testes E2E e de regressão antes de cada release, bug report e UAT com usuários reais.",
+      "habilidades": [
+        "qa_testes",
+        "avaliacao_produto"
+      ],
+      "texto_en": "E2E and regression testing before each release, bug reporting and UAT with real users."
+    },
+    {
+      "texto": "Documentação técnica: registro de decisões no formato ADR e estudos de caso.",
+      "habilidades": [
+        "documentacao_tecnica"
+      ],
+      "texto_en": "Technical documentation: decision log in ADR format and case studies."
+    },
+    {
+      "texto": "Identificação e reporte (bug report) de falha de controle no sistema do coletor do WMS, corrigida após o reporte.",
+      "habilidades": [
+        "qa_testes",
+        "avaliacao_produto",
+        "wms",
+        "equipamentos_operacao"
+      ],
+      "texto_en": "Identified and reported (bug report) a control flaw in the WMS handheld scanner system, fixed after the report."
+    },
+    {
+      "texto": "Operação de centro de distribuição: recebimento, conferência, picking e inventário, com conciliação entre estoque físico e sistema (SAP e WMS).",
+      "habilidades": [
+        "armazenagem",
+        "gestao_estoque",
+        "erp",
+        "wms"
+      ],
+      "texto_en": "Distribution center operations: receiving, checking, picking and inventory, with reconciliation between physical stock and the system (SAP and WMS)."
+    },
+    {
+      "texto": "Gestão de estoque, cadastro de produtos, tabela de preços, emissão de notas fiscais e fechamento de caixa.",
+      "habilidades": [
+        "gestao_estoque",
+        "rotinas_administrativas",
+        "documentacao_fiscal",
+        "financeiro",
+        "compras_suprimentos"
+      ],
+      "texto_en": "Inventory management, product registration, price lists, invoicing and cash closing."
+    },
+    {
+      "texto": "Análise de custos operacionais e precificação orientada por KPIs (custo por km e ganho por hora).",
+      "habilidades": [
+        "analise_custos",
+        "gestao_indicadores"
+      ],
+      "texto_en": "Operating cost analysis and KPI-based pricing (cost per km and revenue per hour)."
+    },
+    {
+      "texto": "Análise exploratória de dados (EDA), com apoio de IA, para identificar padrões de demanda por região e horário.",
+      "habilidades": [
+        "analise_dados"
+      ],
+      "texto_en": "Exploratory data analysis (EDA), with AI support, to identify demand patterns by area and time."
+    },
+    {
+      "texto": "Atendimento ao cliente com mais de 10 mil atendimentos e avaliação média de 4,99.",
+      "habilidades": [
+        "atendimento_cliente"
+      ],
+      "texto_en": "Customer service with more than 10,000 customers served and a 4.99 average rating."
+    },
+    {
+      "texto": "Ensino personalizado de português e matemática, com diagnóstico das dificuldades de cada aluno.",
+      "habilidades": [
+        "docencia",
+        "treinamento"
+      ],
+      "texto_en": "Personalized teaching of Portuguese and mathematics, diagnosing each student's difficulties."
+    },
+    {
+      "texto": "Desenho técnico e modelagem em SolidWorks no projeto de máquinas CNC.",
+      "habilidades": [
+        "desenho_tecnico",
+        "projetos_maquinas"
+      ],
+      "texto_en": "Technical drawing and SolidWorks modeling in CNC machine design."
+    },
+    {
+      "texto": "Informática: hardware, periféricos, Windows e Pacote Office.",
+      "habilidades": [
+        "hardware",
+        "windows",
+        "pacote_office"
+      ],
+      "texto_en": "Computer skills: hardware, peripherals, Windows and Microsoft Office."
+    }
+  ],
+  "resumo_formacao": "Tecnólogo em Mecatrônica Industrial.",
+  "resumo_padrao": "Tecnólogo em Mecatrônica Industrial com experiência em logística, atendimento ao cliente e criação de produtos digitais com IA generativa (Trilha, Verso e Fluxo Quant).",
+  "resumo_formacao_en": "Associate degree (Tecnólogo) in Industrial Mechatronics Technology.",
+  "resumo_padrao_en": "Associate degree in Industrial Mechatronics Technology with experience in logistics, customer service and building digital products with generative AI (Trilha, Verso and Fluxo Quant).",
+  "conquistas_en": [
+    "Passed a state public service exam"
+  ]
+}

@@ -1,0 +1,10 @@
+Analista de Operações com IA
+Requisitos:
+Excel é diferencial.
+Conhecimento em SQL é imprescindível.
+Inglês não é obrigatório.
+Noções de Python.
+Mais de dois anos com engenharia de prompt.
+CNH B com EAR.
+Automação de testes com Cypress ou Playwright.
+Preferencialmente experiência com Jira.

@@ -1,0 +1,4 @@
+Analista de Dados Pleno
+Requisitos:
+• Python
+• Excel intermediário

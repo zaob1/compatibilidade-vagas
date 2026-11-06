@@ -1,0 +1,105 @@
+/* Compatibilidade de Vagas: interface minimalista com tipografia de código (JetBrains Mono, OFL). */
+@font-face { font-family: "JetBrains Mono"; src: url("fontes/jetbrains-mono-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "JetBrains Mono"; src: url("fontes/jetbrains-mono-latin-700-normal.woff2") format("woff2"); font-weight: 700; font-display: swap; }
+
+:root {
+  --papel: #f6f8fa;      /* fundo */
+  --folha: #ffffff;      /* superfícies */
+  --tinta: #1f2328;      /* texto */
+  --grafite: #636c76;    /* texto secundário e comentários */
+  --linha: #d8dee4;      /* bordas */
+  --azul: #3776ab;       /* azul do Python: ação principal */
+  --amarelo: #ffd43b;    /* amarelo do Python: só a barra do resultado e o foco */
+  --ok: #1a7f37; --nao: #c62828; --parcial: #8a6d00;
+  --verde: #2e7d4f;        /* currículo em português */
+  --verde-claro: #3fa37a;  /* currículo em inglês */
+  --cheio: #e5b800;        /* amarelo da barra no tema claro */
+  --mono: "JetBrains Mono", "Cascadia Code", Consolas, "SFMono-Regular", Menlo, monospace;
+}
+html[data-tema="escuro"] { color-scheme: dark; --papel: #161b22; --folha: #1c2128; --tinta: #e6edf3; --grafite: #8b949e; --linha: #30363d;
+    --azul: #6ca6d9; --ok: #3fb950; --nao: #f47067; --parcial: #e3b341;
+    --verde: #2ea05f; --verde-claro: #56d39b; --cheio: #ffd43b; }
+@media (prefers-color-scheme: dark) {
+  html:not([data-tema="claro"]):not([data-tema="escuro"]) { color-scheme: dark; --papel: #161b22; --folha: #1c2128; --tinta: #e6edf3; --grafite: #8b949e; --linha: #30363d;
+    --azul: #6ca6d9; --ok: #3fb950; --nao: #f47067; --parcial: #e3b341;
+    --verde: #2ea05f; --verde-claro: #56d39b; --cheio: #ffd43b; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--papel); color: var(--tinta); font: 400 12.5px/1.6 var(--mono); }
+main { padding: 16px 14px 24px; max-width: 720px; margin: 0 auto; }
+
+h1 { font-size: 14px; font-weight: 700; margin: 0; }
+h1 .ver { color: var(--grafite); font-weight: 400; }
+.sub { color: var(--grafite); margin: 4px 0 14px; }
+h2 { font-size: 12.5px; font-weight: 400; color: var(--grafite); margin: 20px 0 6px; }
+h2::before { content: "# "; color: var(--azul); }
+
+textarea, input[type="text"], select {
+  width: 100%; font: inherit; color: var(--tinta); background: var(--folha);
+  border: 1px solid var(--linha); border-radius: 4px; padding: 8px 10px;
+}
+textarea { min-height: 120px; resize: vertical; }
+button {
+  font: inherit; color: var(--tinta); background: var(--folha); cursor: pointer;
+  border: 1px solid var(--linha); border-radius: 4px; padding: 6px 12px;
+}
+button:hover { border-color: var(--grafite); }
+button.principal { background: var(--azul); border-color: var(--azul); color: #fff; font-weight: 700; }
+button.principal:hover, button.verde:hover, button.verde-claro:hover { filter: brightness(1.08); }
+button.verde { background: var(--verde); border-color: var(--verde); color: #fff; font-weight: 700; }
+button.verde-claro { background: var(--verde-claro); border-color: var(--verde-claro); color: #0d2b1f; font-weight: 700; }
+button:disabled { opacity: .45; cursor: not-allowed; filter: none; }
+:focus-visible { outline: 2px solid var(--amarelo); outline-offset: 2px; }
+.acoes { display: flex; gap: 8px; margin: 10px 0; flex-wrap: wrap; }
+.acoes.centro { justify-content: center; }
+.acoes.extremos { flex-wrap: nowrap; }
+.acoes.extremos button { flex: 1 1 0; padding: 7px 6px; white-space: nowrap; font-size: 12px; letter-spacing: -0.01em; }
+
+.cartao { background: var(--folha); border: 1px solid var(--linha); border-radius: 4px; padding: 14px; margin-top: 14px; }
+
+/* O resultado: a peça de destaque da interface */
+.prompt { color: var(--grafite); }
+.prompt b { color: var(--azul); font-weight: 400; }
+.placar { display: flex; align-items: baseline; gap: 12px; margin: 6px 0 2px; flex-wrap: wrap; }
+.numero { font-size: 34px; font-weight: 700; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.trilho { font-size: 15px; letter-spacing: -0.05em; white-space: nowrap; color: var(--linha); }
+.trilho .cheio { color: var(--cheio); }
+.trilho.apagado .cheio { color: var(--grafite); }
+.resumo-linha { margin-top: 4px; }
+.chaves { margin: 10px 0 0; display: grid; grid-template-columns: max-content 1fr; gap: 2px 14px; color: var(--grafite); }
+.chaves dt { margin: 0; }
+.chaves dd { margin: 0; color: var(--tinta); }
+
+ul.itens { list-style: none; padding: 0; margin: 0; }
+ul.itens li { display: grid; grid-template-columns: 2ch 1fr; gap: 8px; padding: 8px 0; border-top: 1px solid var(--linha); }
+ul.itens li:first-child { border-top: 0; padding-top: 0; }
+.selo { font-weight: 700; }
+.sim .selo { color: var(--ok); }
+.nao .selo { color: var(--nao); }
+.parcial .selo { color: var(--parcial); }
+.verificar .selo { color: var(--grafite); }
+.nome { font-weight: 700; }
+.meta { color: var(--grafite); }
+.tag { color: var(--grafite); margin-left: 6px; }
+.tag.obrigatorio { color: var(--tinta); }
+
+.aviso, .erro, .ok { border-left: 3px solid; padding: 8px 10px; background: var(--folha); border-radius: 0 4px 4px 0; margin-top: 10px; }
+.aviso { border-color: var(--parcial); }
+.erro { border-color: var(--nao); }
+.erro b { color: var(--nao); }
+.ok { border-color: var(--ok); }
+details summary { cursor: pointer; color: var(--grafite); margin-top: 6px; }
+details ul { margin: 6px 0 0; padding-left: 18px; color: var(--grafite); }
+label { display: block; color: var(--grafite); margin: 12px 0 4px; }
+label.botao-arquivo { display: inline-block; margin: 0; color: var(--tinta); background: var(--folha); border: 1px solid var(--linha); border-radius: 4px; padding: 6px 12px; cursor: pointer; }
+label.botao-arquivo:hover { border-color: var(--grafite); }
+label.botao-arquivo:focus-within { outline: 2px solid var(--amarelo); outline-offset: 2px; }
+.acoes .meta { align-self: center; }
+a { color: var(--azul); }
+.rodape { color: var(--grafite); font-size: 11.5px; margin-top: 22px; border-top: 1px solid var(--linha); padding-top: 10px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+.tema { display: flex; justify-content: flex-end; align-items: center; gap: 2px; margin-top: 10px; color: var(--grafite); font-size: 11px; }
+.tema span { margin-right: 6px; }
+.tema button { font-size: 11px; padding: 1px 6px; border: 0; background: none; color: var(--grafite); border-radius: 3px; }
+.tema button:hover { color: var(--tinta); }
+.tema button[aria-pressed="true"] { color: var(--tinta); text-decoration: underline; text-decoration-color: var(--amarelo); text-decoration-thickness: 2px; text-underline-offset: 3px; }

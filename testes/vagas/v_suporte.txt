@@ -1,0 +1,8 @@
+Técnico de Suporte N1
+Atividades:
+Atendimento ao usuário presencial e remoto, abertura de chamados no GLPI, instalação de softwares e configuração de impressoras.
+Requisitos:
+Ensino médio completo. Curso técnico em informática será um diferencial.
+Conhecimento em Windows 10/11 e Pacote Office.
+Noções de redes (DNS, DHCP).
+CNH B desejável.

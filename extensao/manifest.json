@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Compatibilidade de Vagas",
+  "version": "0.5.5",
+  "description": "Selecione os requisitos de uma vaga e veja a compatibilidade com o seu perfil. Funciona sem IA e sem internet: tudo fica no seu navegador.",
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "sidePanel",
+    "scripting",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "options_page": "options.html",
+  "action": {
+    "default_title": "Compatibilidade de Vagas",
+    "default_icon": {
+      "16": "icones/16.png",
+      "32": "icones/32.png"
+    }
+  },
+  "icons": {
+    "16": "icones/16.png",
+    "32": "icones/32.png",
+    "48": "icones/48.png",
+    "128": "icones/128.png"
+  }
+}

@@ -1,0 +1,5 @@
+Analista de Operações
+Requisitos:
+• Noções de Python
+• Conhecimento básico em cibersegurança
+• Excel intermediário

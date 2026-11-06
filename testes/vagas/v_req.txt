@@ -1,0 +1,12 @@
+Analista de Requisitos Jr
+Atividades:
+- Levantamento de requisitos junto às áreas de negócio
+- Escrever histórias de usuário e critérios de aceite
+- Apoiar a homologação das entregas
+Requisitos:
+- Superior completo
+- Mínimo de 1 ano de experiência na função
+- Conhecimento em metodologias ágeis
+Desejável:
+- BPMN
+- SQL básico

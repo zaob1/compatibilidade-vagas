@@ -1,0 +1,7 @@
+Analista de IA Generativa Júnior
+Requisitos:
+- Experiência com ChatGPT ou Claude
+- Uso de Claude Code no desenvolvimento
+Diferenciais:
+- Conhecimento em GitHub Copilot
+- Experiência com Cursor AI

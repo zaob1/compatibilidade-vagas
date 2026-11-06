@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Currículo</title>
+  <style>
+    :root { --texto: #1d1d1b; --suave: #555; --linha: #c9c9c4; --destaque: #2f5bd3; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #e9edf1; font: 10.5pt/1.45 Calibri, Carlito, "Segoe UI", Arial, sans-serif; color: var(--texto); }
+    @font-face { font-family: "JetBrains Mono"; src: url("fontes/jetbrains-mono-latin-400-normal.woff2") format("woff2"); font-weight: 400; }
+    @font-face { font-family: "JetBrains Mono"; src: url("fontes/jetbrains-mono-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+    .barra { position: sticky; top: 0; background: #f6f8fa; border-bottom: 1px solid #d8dee4; padding: 10px 16px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; z-index: 1; font: 12.5px/1.5 "JetBrains Mono", Consolas, monospace; }
+    .barra button { font: inherit; border: 1px solid #d8dee4; background: #fff; border-radius: 4px; padding: 6px 12px; cursor: pointer; color: #1f2328; }
+    .barra button.principal { background: #3776ab; border-color: #3776ab; color: #fff; font-weight: 700; }
+    .barra button:focus-visible { outline: 2px solid #ffd43b; outline-offset: 2px; }
+    .barra .nota { color: #636c76; }
+    .folha { background: #fff; width: 210mm; min-height: 297mm; margin: 16px auto; padding: 16mm 18mm; box-shadow: 0 1px 4px rgba(0,0,0,.12); }
+    h1 { font-size: 18pt; margin: 0 0 2px; }
+    h2 { font-size: 11.5pt; color: #2b4f9e; margin: 14px 0 6px; padding-bottom: 2px; border-bottom: 1px solid var(--linha); }
+    p { margin: 0 0 6px; }
+    ul { margin: 2px 0 6px; padding-left: 18px; }
+    li { margin: 0 0 2px; }
+    .cv-sub { color: var(--suave); }
+    .folha:focus { outline: none; }
+    .folha [contenteditable]:hover, .folha p:hover, .folha li:hover { background: #f4f6ff; }
+    @media print { .folha p:hover, .folha li:hover { background: none; } }
+    .cv-item { margin: 0 0 8px; break-inside: avoid; }
+    .cv-linha { display: flex; gap: 6px; flex-wrap: wrap; }
+    .cv-data { margin-left: auto; color: var(--suave); white-space: nowrap; }
+    section { break-inside: auto; }
+    h2 { break-after: avoid; }
+    @page { size: A4; margin: 14mm 16mm; }
+    @media print {
+      body { background: #fff; }
+      .barra { display: none; }
+      .folha { box-shadow: none; margin: 0; padding: 0; width: auto; min-height: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="barra">
+    <button id="pdf" class="principal">Salvar PDF</button>
+    <button id="word">Baixar Word</button>
+    <span class="nota">Clique em qualquer texto para editar. O PDF e o Word saem com as suas edições. No PDF, escolha o destino "Salvar como PDF".</span>
+  </div>
+  <article class="folha" id="cv" contenteditable="true" spellcheck="true"></article>
+  <script src="docx.iife.js"></script>
+  <script src="curriculo.js"></script>
+  <script src="curriculo_pagina.js"></script>
+</body>
+</html>

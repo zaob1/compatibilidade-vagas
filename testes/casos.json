@@ -1,0 +1,1702 @@
+{
+ "data_referencia": "2026-11",
+ "perfil": "perfil_exemplo.json",
+ "casos": [
+  {
+   "vaga": "v_admin",
+   "analise": {
+    "requisitos": {
+     "rotinas_administrativas": {
+      "hab": "rotinas_administrativas",
+      "peso": 2,
+      "tipo": "sem_secao"
+     },
+     "financeiro": {
+      "hab": "financeiro",
+      "peso": 2,
+      "tipo": "atividade"
+     },
+     "documentacao_fiscal": {
+      "hab": "documentacao_fiscal",
+      "peso": 2,
+      "tipo": "atividade"
+     },
+     "excel#2": {
+      "hab": "excel",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "nivel": 2
+     }
+    },
+    "escolaridade": [
+     {
+      "nivel": "medio",
+      "cursos": [],
+      "aceita_afins": false,
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    ],
+    "experiencia": [
+     {
+      "meses": null,
+      "areas": [
+       "administrativo_financeiro"
+      ],
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    ]
+   },
+   "comparacao": {
+    "percentual": 100,
+    "obrigatorios_faltando": 0,
+    "itens": {
+     "Rotinas administrativas": "sim",
+     "Rotinas financeiras": "sim",
+     "Documentação fiscal de mercadorias": "sim",
+     "Excel (intermediário)": "sim",
+     "Escolaridade: medio": "sim",
+     "Experiência administrativo_financeiro": "sim"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     6,
+     6
+    ]
+   }
+  },
+  {
+   "vaga": "v_baixa_cobertura",
+   "analise": {
+    "requisitos": {
+     "excel#1": {
+      "hab": "excel",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "nivel": 1
+     }
+    },
+    "escolaridade": [],
+    "experiencia": []
+   },
+   "comparacao": {
+    "percentual": 100,
+    "obrigatorios_faltando": 0,
+    "itens": {
+     "Excel (básico)": "sim"
+    },
+    "confianca": "baixa",
+    "cobertura": [
+     1,
+     5
+    ]
+   }
+  },
+  {
+   "vaga": "v_cobertura",
+   "analise": {
+    "requisitos": {
+     "ia_generativa": {
+      "hab": "ia_generativa",
+      "peso": 2,
+      "tipo": "sem_secao"
+     },
+     "excel#1": {
+      "hab": "excel",
+      "peso": 1,
+      "tipo": "desejavel",
+      "nivel": 1
+     },
+     "sql_bancos": {
+      "hab": "sql_bancos",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "ingles#1": {
+      "hab": "ingles",
+      "negado": "ingles"
+     },
+     "python": {
+      "hab": "python",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "basico": true
+     },
+     "engenharia_prompt": {
+      "hab": "engenharia_prompt",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "meses_minimos": 24
+     },
+     "cnh": {
+      "hab": "cnh",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "cat": "B"
+     },
+     "cnh_ear": {
+      "hab": "cnh_ear",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "automacao_testes|cypress/playwright": {
+      "hab": "automacao_testes",
+      "ferramentas": [
+       "cypress",
+       "playwright"
+      ],
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "metodologias_ageis|jira": {
+      "hab": "metodologias_ageis",
+      "ferramentas": [
+       "jira"
+      ],
+      "peso": 1,
+      "tipo": "desejavel"
+     }
+    },
+    "escolaridade": [],
+    "experiencia": []
+   },
+   "comparacao": {
+    "percentual": 61,
+    "obrigatorios_faltando": 2,
+    "itens": {
+     "IA generativa e LLMs": "sim",
+     "Excel (básico)": "sim",
+     "SQL e bancos de dados": "nao",
+     "Python para dados": "parcial",
+     "Engenharia de prompt": "sim",
+     "CNH": "sim",
+     "CNH com EAR": "sim",
+     "Automação de testes (código) (cypress ou playwright)": "nao",
+     "Metodologias ágeis (jira)": "nao"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     8,
+     8
+    ]
+   }
+  },
+  {
+   "vaga": "v_curso",
+   "analise": {
+    "requisitos": {},
+    "escolaridade": [
+     {
+      "nivel": "superior_completo",
+      "cursos": [
+       "nao_reconhecido"
+      ],
+      "aceita_afins": false,
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     {
+      "nivel": "superior_completo",
+      "cursos": [],
+      "aceita_afins": false,
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     {
+      "nivel": "superior_cursando",
+      "cursos": [],
+      "aceita_afins": true,
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    ],
+    "experiencia": []
+   },
+   "comparacao": {
+    "percentual": 100,
+    "obrigatorios_faltando": 0,
+    "itens": {
+     "Escolaridade: superior_completo em nao_reconhecido": "verificar",
+     "Escolaridade: superior_completo": "sim",
+     "Escolaridade: superior_cursando": "sim"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "vaga": "v_dados",
+   "analise": {
+    "requisitos": {
+     "analise_dados": {
+      "hab": "analise_dados",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "meses_minimos": 12
+     },
+     "sql_bancos": {
+      "hab": "sql_bancos",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "python": {
+      "hab": "python",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "power_bi": {
+      "hab": "power_bi",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "excel#3": {
+      "hab": "excel",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "nivel": 3
+     },
+     "estatistica": {
+      "hab": "estatistica",
+      "peso": 1,
+      "tipo": "desejavel"
+     }
+    },
+    "escolaridade": [
+     {
+      "nivel": "superior_completo",
+      "cursos": [
+       "estatistica",
+       "matematica"
+      ],
+      "aceita_afins": true,
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    ],
+    "experiencia": []
+   },
+   "comparacao": {
+    "percentual": 9,
+    "obrigatorios_faltando": 4,
+    "itens": {
+     "Análise de dados": "nao",
+     "SQL e bancos de dados": "nao",
+     "Python para dados": "parcial",
+     "Power BI": "nao",
+     "Excel (avançado)": "nao",
+     "Estatística": "nao",
+     "Escolaridade: superior_completo em estatistica/matematica": "verificar"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     7,
+     7
+    ]
+   }
+  },
+  {
+   "vaga": "v_desenhista",
+   "analise": {
+    "requisitos": {
+     "desenho_tecnico": {
+      "hab": "desenho_tecnico",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "projetos_maquinas": {
+      "hab": "projetos_maquinas",
+      "peso": 2,
+      "tipo": "atividade"
+     },
+     "desenho_tecnico|solidworks": {
+      "hab": "desenho_tecnico",
+      "ferramentas": [
+       "solidworks"
+      ],
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "desenho_tecnico|autocad": {
+      "hab": "desenho_tecnico",
+      "ferramentas": [
+       "autocad"
+      ],
+      "peso": 1,
+      "tipo": "desejavel"
+     },
+     "usinagem_cnc": {
+      "hab": "usinagem_cnc",
+      "peso": 1,
+      "tipo": "desejavel"
+     }
+    },
+    "escolaridade": [
+     {
+      "nivel": "tecnico_ou_superior",
+      "cursos": [
+       "mecanica",
+       "mecatronica"
+      ],
+      "aceita_afins": true,
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    ],
+    "experiencia": [
+     {
+      "meses": 24,
+      "areas": [
+       "industria_mecanica"
+      ],
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    ]
+   },
+   "comparacao": {
+    "percentual": 75,
+    "obrigatorios_faltando": 1,
+    "itens": {
+     "Desenho técnico e CAD": "sim",
+     "Projetos mecânicos e de máquinas": "sim",
+     "Desenho técnico e CAD (solidworks)": "sim",
+     "Desenho técnico e CAD (autocad)": "sim",
+     "Usinagem e CNC (operação/programação)": "nao",
+     "Escolaridade: tecnico_ou_superior em mecanica/mecatronica": "sim",
+     "Experiência industria_mecanica (24 meses)": "nao"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     8,
+     8
+    ]
+   }
+  },
+  {
+   "vaga": "v_esc_correlata",
+   "analise": {
+    "requisitos": {
+     "excel#2": {
+      "hab": "excel",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "nivel": 2
+     },
+     "gestao_indicadores": {
+      "hab": "gestao_indicadores",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    },
+    "escolaridade": [
+     {
+      "nivel": "superior_completo",
+      "cursos": [
+       "administracao",
+       "engenharia"
+      ],
+      "aceita_afins": true,
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    ],
+    "experiencia": []
+   },
+   "comparacao": {
+    "percentual": 100,
+    "obrigatorios_faltando": 0,
+    "itens": {
+     "Excel (intermediário)": "sim",
+     "Gestão por indicadores": "sim",
+     "Escolaridade: superior_completo em administracao/engenharia": "sim"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "vaga": "v_esc_eng_mecatronica",
+   "analise": {
+    "requisitos": {
+     "desenho_tecnico|solidworks": {
+      "hab": "desenho_tecnico",
+      "ferramentas": [
+       "solidworks"
+      ],
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    },
+    "escolaridade": [
+     {
+      "nivel": "superior_completo",
+      "cursos": [
+       "engenharia_mecatronica_automacao"
+      ],
+      "aceita_afins": false,
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    ],
+    "experiencia": []
+   },
+   "comparacao": {
+    "percentual": 50,
+    "obrigatorios_faltando": 1,
+    "itens": {
+     "Desenho técnico e CAD (solidworks)": "sim",
+     "Escolaridade: superior_completo em engenharia_mecatronica_automacao": "nao"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "vaga": "v_esc_engenharia_especifica",
+   "analise": {
+    "requisitos": {
+     "excel#2": {
+      "hab": "excel",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "nivel": 2
+     },
+     "gestao_indicadores": {
+      "hab": "gestao_indicadores",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    },
+    "escolaridade": [
+     {
+      "nivel": "superior_completo",
+      "cursos": [
+       "eletronica_eletrotecnica",
+       "mecanica"
+      ],
+      "aceita_afins": false,
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    ],
+    "experiencia": []
+   },
+   "comparacao": {
+    "percentual": 67,
+    "obrigatorios_faltando": 1,
+    "itens": {
+     "Excel (intermediário)": "sim",
+     "Gestão por indicadores": "sim",
+     "Escolaridade: superior_completo em eletronica_eletrotecnica/mecanica": "nao"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "vaga": "v_esc_tecnologia",
+   "analise": {
+    "requisitos": {
+     "excel#2": {
+      "hab": "excel",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "nivel": 2
+     },
+     "gestao_indicadores": {
+      "hab": "gestao_indicadores",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    },
+    "escolaridade": [
+     {
+      "nivel": "superior_completo",
+      "cursos": [
+       "engenharia",
+       "tecnologia"
+      ],
+      "aceita_afins": false,
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    ],
+    "experiencia": []
+   },
+   "comparacao": {
+    "percentual": 100,
+    "obrigatorios_faltando": 0,
+    "itens": {
+     "Excel (intermediário)": "sim",
+     "Gestão por indicadores": "sim",
+     "Escolaridade: superior_completo em engenharia/tecnologia": "sim"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "vaga": "v_espanhol",
+   "analise": {
+    "requisitos": {
+     "espanhol#2": {
+      "hab": "espanhol",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "nivel": 2
+     },
+     "atendimento_cliente": {
+      "hab": "atendimento_cliente",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "espanhol#3": {
+      "hab": "espanhol",
+      "peso": 1,
+      "tipo": "desejavel",
+      "nivel": 3
+     }
+    },
+    "escolaridade": [],
+    "experiencia": []
+   },
+   "comparacao": {
+    "percentual": 86,
+    "obrigatorios_faltando": 0,
+    "itens": {
+     "Espanhol (intermediário)": "sim",
+     "Atendimento ao cliente e vendas": "sim",
+     "Espanhol (avançado)": "nao"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "vaga": "v_estagio_dados",
+   "analise": {
+    "requisitos": {
+     "python": {
+      "hab": "python",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "excel#2": {
+      "hab": "excel",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "nivel": 2
+     },
+     "power_bi": {
+      "hab": "power_bi",
+      "peso": 1,
+      "tipo": "desejavel"
+     }
+    },
+    "escolaridade": [
+     {
+      "nivel": "superior_cursando",
+      "cursos": [],
+      "aceita_afins": false,
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    ],
+    "experiencia": []
+   },
+   "comparacao": {
+    "percentual": 75,
+    "obrigatorios_faltando": 0,
+    "itens": {
+     "Python para dados": "parcial",
+     "Excel (intermediário)": "sim",
+     "Power BI": "nao",
+     "Escolaridade: superior_cursando": "sim"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "vaga": "v_ia_ferramentas",
+   "analise": {
+    "requisitos": {
+     "ia_generativa": {
+      "hab": "ia_generativa",
+      "peso": 2,
+      "tipo": "sem_secao"
+     },
+     "ia_generativa|chatgpt/claude": {
+      "hab": "ia_generativa",
+      "ferramentas": [
+       "chatgpt",
+       "claude"
+      ],
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "dev_assistido_ia|claude_code": {
+      "hab": "dev_assistido_ia",
+      "ferramentas": [
+       "claude_code"
+      ],
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "dev_assistido_ia|github_copilot": {
+      "hab": "dev_assistido_ia",
+      "ferramentas": [
+       "github_copilot"
+      ],
+      "peso": 1,
+      "tipo": "desejavel"
+     },
+     "dev_assistido_ia|cursor": {
+      "hab": "dev_assistido_ia",
+      "ferramentas": [
+       "cursor"
+      ],
+      "peso": 1,
+      "tipo": "desejavel"
+     }
+    },
+    "escolaridade": [],
+    "experiencia": []
+   },
+   "comparacao": {
+    "percentual": 80,
+    "obrigatorios_faltando": 0,
+    "itens": {
+     "IA generativa e LLMs": "sim",
+     "IA generativa e LLMs (chatgpt ou claude)": "sim",
+     "Desenvolvimento assistido por IA (claude_code)": "sim",
+     "Desenvolvimento assistido por IA (github_copilot)": "nao",
+     "Desenvolvimento assistido por IA (cursor)": "nao"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "vaga": "v_nocoes",
+   "analise": {
+    "requisitos": {
+     "python": {
+      "hab": "python",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "basico": true
+     },
+     "seguranca_informacao": {
+      "hab": "seguranca_informacao",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "basico": true
+     },
+     "excel#2": {
+      "hab": "excel",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "nivel": 2
+     }
+    },
+    "escolaridade": [],
+    "experiencia": []
+   },
+   "comparacao": {
+    "percentual": 67,
+    "obrigatorios_faltando": 0,
+    "itens": {
+     "Python para dados": "parcial",
+     "Segurança da informação e cibersegurança": "parcial",
+     "Excel (intermediário)": "sim"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "vaga": "v_pleno_dados",
+   "analise": {
+    "requisitos": {
+     "analise_dados": {
+      "hab": "analise_dados",
+      "peso": 2,
+      "tipo": "sem_secao"
+     },
+     "python": {
+      "hab": "python",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "excel#2": {
+      "hab": "excel",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "nivel": 2
+     }
+    },
+    "escolaridade": [],
+    "experiencia": []
+   },
+   "comparacao": {
+    "percentual": 62,
+    "obrigatorios_faltando": 1,
+    "itens": {
+     "Análise de dados": "sim",
+     "Python para dados": "nao",
+     "Excel (intermediário)": "sim"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "vaga": "v_po",
+   "analise": {
+    "requisitos": {
+     "ia_generativa": {
+      "hab": "ia_generativa",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "gestao_produto": {
+      "hab": "gestao_produto",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "ingles#3": {
+      "hab": "ingles",
+      "peso": 1,
+      "tipo": "desejavel",
+      "nivel": 3
+     },
+     "ux_ui|figma": {
+      "hab": "ux_ui",
+      "ferramentas": [
+       "figma"
+      ],
+      "peso": 1,
+      "tipo": "desejavel"
+     }
+    },
+    "escolaridade": [],
+    "experiencia": []
+   },
+   "comparacao": {
+    "percentual": 75,
+    "obrigatorios_faltando": 0,
+    "itens": {
+     "IA generativa e LLMs": "sim",
+     "Gestão de produto": "sim",
+     "Inglês (avançado)": "nao",
+     "UX/UI e prototipagem (figma)": "nao"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "vaga": "v_professor",
+   "analise": {
+    "requisitos": {
+     "docencia": {
+      "hab": "docencia",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "comportamental": {
+      "hab": "comportamental",
+      "peso": 1.5,
+      "tipo": "obrigatorio"
+     },
+     "treinamento": {
+      "hab": "treinamento",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "alfabetizacao": {
+      "hab": "alfabetizacao",
+      "peso": 1,
+      "tipo": "desejavel"
+     }
+    },
+    "escolaridade": [
+     {
+      "nivel": "superior_cursando",
+      "cursos": [
+       "letras",
+       "pedagogia"
+      ],
+      "aceita_afins": false,
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    ],
+    "experiencia": []
+   },
+   "comparacao": {
+    "percentual": 65,
+    "obrigatorios_faltando": 1,
+    "itens": {
+     "Docência e reforço escolar": "sim",
+     "Competências comportamentais": "sim",
+     "Treinamento e didática": "sim",
+     "Alfabetização e letramento": "nao",
+     "Escolaridade: superior_cursando em letras/pedagogia": "nao"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "vaga": "v_prompt",
+   "analise": {
+    "requisitos": {
+     "ia_generativa": {
+      "hab": "ia_generativa",
+      "peso": 2,
+      "tipo": "sem_secao"
+     },
+     "engenharia_prompt": {
+      "hab": "engenharia_prompt",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "ia_generativa|chatgpt/claude/gemini": {
+      "hab": "ia_generativa",
+      "ferramentas": [
+       "chatgpt",
+       "claude",
+       "gemini"
+      ],
+      "peso": 2,
+      "tipo": "atividade"
+     },
+     "guardrails_avaliacao": {
+      "hab": "guardrails_avaliacao",
+      "peso": 2,
+      "tipo": "atividade"
+     },
+     "saida_estruturada": {
+      "hab": "saida_estruturada",
+      "peso": 2,
+      "tipo": "atividade"
+     },
+     "documentacao_tecnica": {
+      "hab": "documentacao_tecnica",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "comportamental": {
+      "hab": "comportamental",
+      "peso": 1.5,
+      "tipo": "obrigatorio"
+     },
+     "python": {
+      "hab": "python",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "rag": {
+      "hab": "rag",
+      "peso": 1,
+      "tipo": "desejavel"
+     },
+     "agentes_ia": {
+      "hab": "agentes_ia",
+      "peso": 1,
+      "tipo": "desejavel"
+     },
+     "automacao_ia": {
+      "hab": "automacao_ia",
+      "peso": 1,
+      "tipo": "desejavel"
+     }
+    },
+    "escolaridade": [],
+    "experiencia": []
+   },
+   "comparacao": {
+    "percentual": 81,
+    "obrigatorios_faltando": 0,
+    "itens": {
+     "IA generativa e LLMs": "sim",
+     "Engenharia de prompt": "sim",
+     "IA generativa e LLMs (chatgpt ou claude ou gemini)": "sim",
+     "Guardrails, avaliação e governança de IA": "sim",
+     "Saída estruturada (JSON) e validação": "sim",
+     "Documentação técnica": "sim",
+     "Competências comportamentais": "sim",
+     "Python para dados": "parcial",
+     "RAG e busca vetorial": "nao",
+     "Agentes de IA": "parcial",
+     "Automação com IA e chatbots": "nao"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     8,
+     8
+    ]
+   }
+  },
+  {
+   "vaga": "v_qa",
+   "analise": {
+    "requisitos": {
+     "qa_testes": {
+      "hab": "qa_testes",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "metodologias_ageis|jira": {
+      "hab": "metodologias_ageis",
+      "ferramentas": [
+       "jira"
+      ],
+      "peso": 2,
+      "tipo": "atividade"
+     },
+     "metodologias_ageis": {
+      "hab": "metodologias_ageis",
+      "peso": 2,
+      "tipo": "atividade"
+     },
+     "ingles#2": {
+      "hab": "ingles",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "nivel": 2
+     },
+     "automacao_testes|cypress/playwright": {
+      "hab": "automacao_testes",
+      "ferramentas": [
+       "cypress",
+       "playwright"
+      ],
+      "peso": 1,
+      "tipo": "desejavel"
+     },
+     "qa_testes|cert_ctfl": {
+      "hab": "qa_testes",
+      "ferramentas": [
+       "cert_ctfl"
+      ],
+      "peso": 1,
+      "tipo": "desejavel"
+     }
+    },
+    "escolaridade": [
+     {
+      "nivel": "superior_cursando",
+      "cursos": [
+       "sistemas_informacao",
+       "ti"
+      ],
+      "aceita_afins": true,
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    ],
+    "experiencia": []
+   },
+   "comparacao": {
+    "percentual": 25,
+    "obrigatorios_faltando": 1,
+    "itens": {
+     "QA e testes de software": "sim",
+     "Metodologias ágeis (jira)": "nao",
+     "Metodologias ágeis": "nao",
+     "Inglês (intermediário)": "nao",
+     "Automação de testes (código) (cypress ou playwright)": "nao",
+     "QA e testes de software (cert_ctfl)": "nao",
+     "Escolaridade: superior_cursando em sistemas_informacao/ti": "verificar"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     8,
+     8
+    ]
+   }
+  },
+  {
+   "vaga": "v_req",
+   "analise": {
+    "requisitos": {
+     "requisitos": {
+      "hab": "requisitos",
+      "peso": 2,
+      "tipo": "sem_secao"
+     },
+     "qa_testes": {
+      "hab": "qa_testes",
+      "peso": 2,
+      "tipo": "atividade"
+     },
+     "metodologias_ageis": {
+      "hab": "metodologias_ageis",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "requisitos|bpmn": {
+      "hab": "requisitos",
+      "ferramentas": [
+       "bpmn"
+      ],
+      "peso": 1,
+      "tipo": "desejavel"
+     },
+     "sql_bancos": {
+      "hab": "sql_bancos",
+      "peso": 1,
+      "tipo": "desejavel",
+      "basico": true
+     }
+    },
+    "escolaridade": [
+     {
+      "nivel": "superior_completo",
+      "cursos": [],
+      "aceita_afins": false,
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    ],
+    "experiencia": [
+     {
+      "meses": 12,
+      "areas": [
+       "produto_qa"
+      ],
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    ]
+   },
+   "comparacao": {
+    "percentual": 47,
+    "obrigatorios_faltando": 2,
+    "itens": {
+     "Levantamento e análise de requisitos": "sim",
+     "QA e testes de software": "sim",
+     "Metodologias ágeis": "nao",
+     "Levantamento e análise de requisitos (bpmn)": "nao",
+     "SQL e bancos de dados": "nao",
+     "Escolaridade: superior_completo": "sim",
+     "Experiência produto_qa (12 meses)": "nao"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     7,
+     7
+    ]
+   }
+  },
+  {
+   "vaga": "v_sem_nivel_curso",
+   "analise": {
+    "requisitos": {
+     "python": {
+      "hab": "python",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "analise_dados": {
+      "hab": "analise_dados",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "excel#2": {
+      "hab": "excel",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "nivel": 2
+     }
+    },
+    "escolaridade": [],
+    "experiencia": []
+   },
+   "comparacao": {
+    "percentual": 67,
+    "obrigatorios_faltando": 1,
+    "itens": {
+     "Python para dados": "nao",
+     "Análise de dados": "sim",
+     "Excel (intermediário)": "sim"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "vaga": "v_suporte",
+   "analise": {
+    "requisitos": {
+     "suporte_tecnico": {
+      "hab": "suporte_tecnico",
+      "peso": 2,
+      "tipo": "sem_secao"
+     },
+     "hardware": {
+      "hab": "hardware",
+      "peso": 2,
+      "tipo": "atividade"
+     },
+     "gestao_chamados_itil|glpi": {
+      "hab": "gestao_chamados_itil",
+      "ferramentas": [
+       "glpi"
+      ],
+      "peso": 2,
+      "tipo": "atividade"
+     },
+     "pacote_office": {
+      "hab": "pacote_office",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "windows": {
+      "hab": "windows",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "redes": {
+      "hab": "redes",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "basico": true
+     },
+     "cnh": {
+      "hab": "cnh",
+      "peso": 1,
+      "tipo": "desejavel",
+      "cat": "B"
+     }
+    },
+    "escolaridade": [
+     {
+      "nivel": "medio",
+      "cursos": [],
+      "aceita_afins": false,
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     {
+      "nivel": "tecnico",
+      "cursos": [
+       "ti"
+      ],
+      "aceita_afins": false,
+      "peso": 1,
+      "tipo": "desejavel"
+     }
+    ],
+    "experiencia": []
+   },
+   "comparacao": {
+    "percentual": 63,
+    "obrigatorios_faltando": 1,
+    "itens": {
+     "Suporte técnico ao usuário": "nao",
+     "Hardware, software e periféricos": "sim",
+     "Gestão de chamados / ITIL (glpi)": "nao",
+     "Pacote Office": "sim",
+     "Windows": "sim",
+     "Redes": "nao",
+     "CNH": "sim",
+     "Escolaridade: medio": "sim",
+     "Escolaridade: tecnico em ti": "verificar"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     5,
+     5
+    ]
+   }
+  },
+  {
+   "vaga": "v_tempo",
+   "analise": {
+    "requisitos": {
+     "engenharia_prompt": {
+      "hab": "engenharia_prompt",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "meses_minimos": 6
+     },
+     "ia_generativa": {
+      "hab": "ia_generativa",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "meses_minimos": 12
+     },
+     "requisitos": {
+      "hab": "requisitos",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "meses_minimos": 24
+     }
+    },
+    "escolaridade": [],
+    "experiencia": []
+   },
+   "comparacao": {
+    "percentual": 100,
+    "obrigatorios_faltando": 0,
+    "itens": {
+     "Engenharia de prompt": "sim",
+     "IA generativa e LLMs": "sim",
+     "Levantamento e análise de requisitos": "sim"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "vaga": "v_vendas",
+   "analise": {
+    "requisitos": {
+     "atendimento_cliente": {
+      "hab": "atendimento_cliente",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "vendas_comercial": {
+      "hab": "vendas_comercial",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "crm": {
+      "hab": "crm",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    },
+    "escolaridade": [
+     {
+      "nivel": "medio",
+      "cursos": [],
+      "aceita_afins": false,
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    ],
+    "experiencia": []
+   },
+   "comparacao": {
+    "percentual": 50,
+    "obrigatorios_faltando": 2,
+    "itens": {
+     "Atendimento ao cliente e vendas": "sim",
+     "Vendas e prospecção": "nao",
+     "CRM": "nao",
+     "Escolaridade: medio": "sim"
+    },
+    "confianca": "alta",
+    "cobertura": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "vaga": "vaga1",
+   "analise": {
+    "requisitos": {
+     "cnh": {
+      "hab": "cnh",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "cat": "D"
+     },
+     "gestao_estoque": {
+      "hab": "gestao_estoque",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "excel#3": {
+      "hab": "excel",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "nivel": 3
+     },
+     "ingles#1": {
+      "hab": "ingles",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "nivel": 1,
+      "basico": true
+     },
+     "wms": {
+      "hab": "wms",
+      "negado": "wms"
+     },
+     "erp|sap": {
+      "hab": "erp",
+      "ferramentas": [
+       "sap"
+      ],
+      "peso": 1,
+      "tipo": "desejavel"
+     },
+     "comportamental": {
+      "hab": "comportamental",
+      "peso": 0.5,
+      "tipo": "desejavel"
+     }
+    },
+    "escolaridade": [
+     {
+      "nivel": "medio",
+      "cursos": [],
+      "aceita_afins": false,
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    ],
+    "experiencia": [
+     {
+      "negado": true
+     }
+    ]
+   }
+  },
+  {
+   "vaga": "vaga2",
+   "analise": {
+    "requisitos": {
+     "suporte_tecnico": {
+      "hab": "suporte_tecnico",
+      "peso": 2,
+      "tipo": "sem_secao"
+     },
+     "gestao_chamados_itil|glpi": {
+      "hab": "gestao_chamados_itil",
+      "ferramentas": [
+       "glpi"
+      ],
+      "peso": 2,
+      "tipo": "atividade"
+     },
+     "hardware": {
+      "hab": "hardware",
+      "peso": 2,
+      "tipo": "atividade"
+     },
+     "ingles#1": {
+      "hab": "ingles",
+      "negado": "ingles"
+     },
+     "power_bi": {
+      "hab": "power_bi",
+      "peso": 1,
+      "tipo": "desejavel"
+     },
+     "excel#1": {
+      "hab": "excel",
+      "peso": 1,
+      "tipo": "desejavel",
+      "nivel": 1
+     },
+     "active_directory_acessos": {
+      "hab": "active_directory_acessos",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "windows": {
+      "hab": "windows",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "redes": {
+      "hab": "redes",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    },
+    "escolaridade": [],
+    "experiencia": []
+   }
+  },
+  {
+   "vaga": "vaga3",
+   "analise": {
+    "requisitos": {
+     "excel#2": {
+      "hab": "excel",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "nivel": 2
+     },
+     "cnh": {
+      "hab": "cnh",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "cat": "B"
+     }
+    },
+    "escolaridade": [],
+    "experiencia": [
+     {
+      "negado": true
+     }
+    ]
+   }
+  },
+  {
+   "vaga": "vaga4",
+   "analise": {
+    "requisitos": {
+     "gestao_estoque": {
+      "hab": "gestao_estoque",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "wms": {
+      "hab": "wms",
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     "suporte_tecnico": {
+      "hab": "suporte_tecnico",
+      "peso": 1,
+      "tipo": "desejavel"
+     },
+     "power_bi": {
+      "hab": "power_bi",
+      "peso": 1,
+      "tipo": "desejavel",
+      "meses_minimos": 18
+     }
+    },
+    "escolaridade": [
+     {
+      "nivel": "superior_cursando",
+      "cursos": [
+       "administracao",
+       "logistica"
+      ],
+      "aceita_afins": true,
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     {
+      "nivel": "pos",
+      "cursos": [
+       "logistica"
+      ],
+      "aceita_afins": false,
+      "peso": 1,
+      "tipo": "desejavel"
+     }
+    ],
+    "experiencia": [
+     {
+      "meses": 24,
+      "areas": [
+       "logistica"
+      ],
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    ]
+   }
+  },
+  {
+   "vaga": "vaga5",
+   "analise": {
+    "requisitos": {},
+    "escolaridade": [
+     {
+      "nivel": "medio",
+      "cursos": [],
+      "aceita_afins": false,
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     {
+      "nivel": "tecnico",
+      "cursos": [
+       "ti"
+      ],
+      "aceita_afins": false,
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    ],
+    "experiencia": [
+     {
+      "negado": true
+     },
+     {
+      "meses": null,
+      "areas": [
+       "ti_suporte"
+      ],
+      "peso": 1,
+      "tipo": "desejavel"
+     }
+    ]
+   }
+  },
+  {
+   "vaga": "vaga6",
+   "analise": {
+    "requisitos": {
+     "power_bi": {
+      "hab": "power_bi",
+      "peso": 3,
+      "tipo": "obrigatorio",
+      "meses_minimos": 6
+     }
+    },
+    "escolaridade": [],
+    "experiencia": [
+     {
+      "meses": 24,
+      "areas": [
+       "dados_bi"
+      ],
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     {
+      "meses": 36,
+      "areas": [
+       "logistica"
+      ],
+      "peso": 3,
+      "tipo": "obrigatorio"
+     },
+     {
+      "meses": null,
+      "areas": [
+       "ti_suporte"
+      ],
+      "peso": 3,
+      "tipo": "obrigatorio"
+     }
+    ]
+   }
+  },
+  {
+   "vaga": "vaga7",
+   "analise": {
+    "requisitos": {
+     "excel#3": {
+      "hab": "excel",
+      "peso": 2,
+      "tipo": "sem_secao",
+      "nivel": 3
+     },
+     "ingles#2": {
+      "hab": "ingles",
+      "peso": 2,
+      "tipo": "sem_secao",
+      "nivel": 2
+     }
+    },
+    "escolaridade": [],
+    "experiencia": []
+   }
+  }
+ ],
+ "nivel_da_vaga": [
+  {
+   "vaga": "v_sem_nivel_curso",
+   "opcoes": {},
+   "percentual": 67,
+   "senioridade": "indefinida",
+   "origem": "texto"
+  },
+  {
+   "vaga": "v_sem_nivel_curso",
+   "opcoes": {
+    "cargo": "Analista de Dados Júnior"
+   },
+   "percentual": 83,
+   "senioridade": "entrada",
+   "origem": "cargo"
+  },
+  {
+   "vaga": "v_sem_nivel_curso",
+   "opcoes": {
+    "senioridade": "entrada"
+   },
+   "percentual": 83,
+   "senioridade": "entrada",
+   "origem": "declarada"
+  },
+  {
+   "vaga": "v_sem_nivel_curso",
+   "opcoes": {
+    "senioridade": "acima",
+    "cargo": "Analista Júnior"
+   },
+   "percentual": 67,
+   "senioridade": "acima",
+   "origem": "declarada"
+  },
+  {
+   "vaga": "v_sem_nivel_curso",
+   "opcoes": {
+    "cargo": "Analista de Dados Sênior"
+   },
+   "percentual": 67,
+   "senioridade": "acima",
+   "origem": "cargo"
+  },
+  {
+   "vaga": "v_pleno_dados",
+   "opcoes": {
+    "cargo": "Analista Júnior"
+   },
+   "percentual": 62,
+   "senioridade": "acima",
+   "origem": "texto"
+  }
+ ]
+}

@@ -1,0 +1,383 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Perfil do candidato",
+  "description": "Estrutura do perfil lida pelo motor de compatibilidade. A validação de conteúdo (habilidades e ferramentas existentes no dicionário, datas coerentes) é feita pela função validar_perfil do motor.",
+  "type": "object",
+  "required": [
+    "versao_esquema",
+    "dados_pessoais",
+    "formacoes",
+    "experiencias",
+    "projetos",
+    "cursos",
+    "habilidades_com_nivel",
+    "lacunas"
+  ],
+  "$defs": {
+    "data": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}(-(0[1-9]|1[0-2]))?$"
+    },
+    "lista_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9_]+$"
+      },
+      "uniqueItems": true
+    },
+    "item_com_periodo": {
+      "type": "object",
+      "required": [
+        "id",
+        "tipo",
+        "inicio",
+        "fim",
+        "habilidades"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$"
+        },
+        "tipo": {
+          "enum": [
+            "profissional",
+            "projeto_proprio",
+            "projeto_assistido_ia"
+          ]
+        },
+        "inicio": {
+          "$ref": "#/$defs/data"
+        },
+        "fim": {
+          "$ref": "#/$defs/data"
+        },
+        "areas": {
+          "$ref": "#/$defs/lista_ids"
+        },
+        "habilidades": {
+          "$ref": "#/$defs/lista_ids"
+        },
+        "habilidades_pontuais": {
+          "$ref": "#/$defs/lista_ids"
+        },
+        "ferramentas": {
+          "$ref": "#/$defs/lista_ids"
+        }
+      }
+    },
+    "atividade": {
+      "oneOf": [
+        {
+          "type": "string",
+          "minLength": 3
+        },
+        {
+          "type": "object",
+          "required": [
+            "texto"
+          ],
+          "properties": {
+            "texto": {
+              "type": "string",
+              "minLength": 3
+            },
+            "habilidades": {
+              "$ref": "#/$defs/lista_ids"
+            },
+            "destacar_em": {
+              "$ref": "#/$defs/lista_ids"
+            },
+            "texto_en": {
+              "type": "string",
+              "minLength": 3
+            },
+            "fixa": {
+              "type": "boolean",
+              "description": "Aparece sempre que a experiência aparece completa (ex.: declaração de código feito com assistência de IA)."
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "properties": {
+    "versao_esquema": {
+      "type": "string"
+    },
+    "dados_pessoais": {
+      "type": "object",
+      "required": [
+        "nome"
+      ],
+      "properties": {
+        "nome": {
+          "type": "string",
+          "minLength": 2
+        },
+        "email": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "telefone": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cidade": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "linkedin": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "nascimento": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+        },
+        "estado_civil": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "formacoes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "nivel",
+          "curso",
+          "situacao"
+        ],
+        "properties": {
+          "nivel": {
+            "enum": [
+              "fundamental",
+              "medio",
+              "tecnico",
+              "superior_cursando",
+              "superior_completo",
+              "pos",
+              "mestrado",
+              "doutorado"
+            ]
+          },
+          "situacao": {
+            "enum": [
+              "concluido",
+              "cursando",
+              "trancado"
+            ]
+          },
+          "curso_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "inicio": {
+            "$ref": "#/$defs/data"
+          },
+          "fim": {
+            "$ref": "#/$defs/data"
+          }
+        }
+      }
+    },
+    "experiencias": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "#/$defs/item_com_periodo"
+          },
+          {
+            "required": [
+              "empresa",
+              "cargo",
+              "atividades"
+            ],
+            "properties": {
+              "tipo": {
+                "const": "profissional"
+              },
+              "atividades": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "$ref": "#/$defs/atividade"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "projetos": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "#/$defs/item_com_periodo"
+          },
+          {
+            "required": [
+              "nome",
+              "descricao"
+            ],
+            "properties": {
+              "tipo": {
+                "enum": [
+                  "projeto_proprio",
+                  "projeto_assistido_ia"
+                ]
+              },
+              "topicos": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "texto",
+                    "habilidades"
+                  ],
+                  "properties": {
+                    "texto": {
+                      "type": "string",
+                      "minLength": 10
+                    },
+                    "habilidades": {
+                      "$ref": "#/$defs/lista_ids"
+                    }
+                  }
+                }
+              },
+              "situacao": {
+                "enum": [
+                  "em_uso",
+                  "em_desenvolvimento",
+                  "encerrado"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "cursos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "tipo",
+          "nome",
+          "habilidades"
+        ],
+        "properties": {
+          "tipo": {
+            "enum": [
+              "curso_concluido",
+              "curso_andamento"
+            ]
+          },
+          "habilidades": {
+            "$ref": "#/$defs/lista_ids"
+          },
+          "ferramentas": {
+            "$ref": "#/$defs/lista_ids"
+          }
+        }
+      }
+    },
+    "habilidades_com_nivel": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "evidencias"
+        ],
+        "properties": {
+          "nivel": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+          },
+          "categoria": {
+            "enum": [
+              "A",
+              "B",
+              "AB",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          "evidencias": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "lacunas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "atividades_academicas": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/atividade"
+      }
+    },
+    "frases_resumo": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "texto",
+          "habilidades"
+        ],
+        "properties": {
+          "texto": {
+            "type": "string",
+            "minLength": 10
+          },
+          "habilidades": {
+            "$ref": "#/$defs/lista_ids"
+          }
+        }
+      }
+    },
+    "resumo_formacao": {
+      "type": "string"
+    },
+    "resumo_padrao": {
+      "type": "string"
+    }
+  }
+}

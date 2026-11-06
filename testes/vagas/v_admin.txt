@@ -1,0 +1,9 @@
+Auxiliar Administrativo
+Atividades:
+- Rotinas administrativas, cadastro de clientes e fornecedores
+- Contas a pagar e a receber, fechamento de caixa
+- Emissão de notas fiscais
+Requisitos:
+- Ensino médio completo
+- Excel intermediário
+- Experiência na área administrativa

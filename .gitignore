@@ -1,0 +1,9 @@
+# Perfis reais nunca vão para o repositório
+perfil_*.json
+!perfil_exemplo.json
+!perfil_schema.json
+!testes/perfil_quebrado_*.json
+__pycache__/
+*.pyc
+*.zip
+.DS_Store

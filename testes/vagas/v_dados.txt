@@ -1,0 +1,10 @@
+Analista de Dados Júnior
+Requisitos:
+• Superior completo em Estatística, Matemática, Computação ou áreas correlatas
+• SQL intermediário
+• Python (pandas)
+• Power BI
+• Excel avançado
+• 1 ano de experiência com análise de dados
+Diferenciais:
+• Conhecimento em estatística

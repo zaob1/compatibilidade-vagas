@@ -1,0 +1,9 @@
+Analista de Suporte N2
+Atividades:
+- Atendimento de chamados via GLPI
+- Configuração de impressoras e pop-up de navegador
+Requisitos:
+Não é necessário inglês. Desejável Excel/Power BI.
+Inglês não é obrigatório.
+Conhecimento em Active Directory, redes TCP/IP e Windows Server
+Classificação fiscal de produtos é um plus

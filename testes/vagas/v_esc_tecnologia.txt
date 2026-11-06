@@ -1,0 +1,5 @@
+Analista de Processos
+Requisitos:
+- Graduação em Engenharia ou Tecnologia
+- Excel intermediário
+- Experiência com indicadores de desempenho

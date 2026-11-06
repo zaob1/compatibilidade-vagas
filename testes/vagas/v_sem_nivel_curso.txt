@@ -1,0 +1,5 @@
+Banco de talentos - Dados
+Requisitos:
+- Conhecimento em Python
+- Análise de dados
+- Excel intermediário

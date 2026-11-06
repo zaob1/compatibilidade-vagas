@@ -1,0 +1,12 @@
+Especialista em Prompt / IA Generativa (Júnior)
+O que você vai fazer:
+• Criar e otimizar prompts para LLMs (ChatGPT, Claude, Gemini)
+• Definir guardrails e avaliar a qualidade das respostas de IA
+• Estruturar saídas em JSON para integração com sistemas
+Requisitos:
+• Experiência com engenharia de prompt
+• Boa comunicação e documentação técnica
+• Python é obrigatório
+Diferenciais:
+• RAG e bancos vetoriais
+• Agentes de IA com LangChain ou n8n

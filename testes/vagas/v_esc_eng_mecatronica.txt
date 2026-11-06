@@ -1,0 +1,4 @@
+Analista de Automação
+Requisitos:
+- Superior completo em Engenharia Mecatrônica
+- Desenho técnico em SolidWorks

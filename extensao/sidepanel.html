@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Compatibilidade de Vagas</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="tema.js"></script>
+</head>
+<body>
+<main>
+  <h1>Compatibilidade de Vagas <span class="ver">offline</span></h1>
+  <p class="sub">Selecione a vaga na página, clique com o botão direito e escolha "Analisar compatibilidade". Ou cole o texto aqui.</p>
+  <div id="sem-perfil" class="aviso" hidden>Nenhum perfil carregado. <a href="#" id="abrir-opcoes">Carregue seu perfil</a> para calcular a compatibilidade.</div>
+  <textarea id="vaga" placeholder="Cole aqui o texto da vaga"></textarea>
+  <div class="acoes centro">
+    <button id="analisar" class="principal">Analisar</button>
+    <button id="limpar">Limpar</button>
+    <button id="perfil">Meu perfil</button>
+  </div>
+  <div id="erro" class="erro" hidden></div>
+  <section id="resultado" hidden>
+    <div class="cartao">
+      <div class="prompt"><b>&gt;&gt;&gt;</b> compatibilidade</div>
+      <div class="placar"><span class="numero" id="pct"></span><span class="trilho" id="trilho" aria-hidden="true"></span></div>
+      <div class="resumo-linha" id="resumo"></div>
+      <div id="alerta-cobertura" hidden></div>
+      <dl class="chaves" id="chaves"></dl>
+      <label for="nivel">Nível da vaga</label>
+      <select id="nivel">
+        <option value="auto">automático (lido na vaga)</option>
+        <option value="entrada">entrada: estágio, júnior, talentos</option>
+        <option value="acima">pleno ou acima</option>
+      </select>
+      <label for="cargo">Cargo no currículo (confira ou corrija)</label>
+      <input id="cargo" type="text">
+      <div class="acoes extremos">
+        <button id="gerar" class="verde">Currículo português</button>
+        <button id="gerar-en" class="verde-claro">Currículo inglês</button>
+      </div>
+    </div>
+    <div id="grupos"></div>
+  </section>
+  <p class="rodape">Cada requisito tem peso: obrigatório 3, atividade 2, desejável 1. Só conta como atendido o que tem evidência no seu perfil. Curso em andamento vale metade do peso em vagas de entrada ou quando a vaga pede só noções. Itens para verificar ficam fora da conta. Nada sai do seu navegador.</p>
+  <div class="tema" role="group" aria-label="Tema"><span>tema</span><button data-valor="auto">automático</button><button data-valor="claro">claro</button><button data-valor="escuro">escuro</button></div>
+</main>
+<script src="motor.js"></script>
+<script src="curriculo.js"></script>
+<script src="sidepanel.js"></script>
+</body>
+</html>

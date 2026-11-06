@@ -1,0 +1,12 @@
+Analista de QA Júnior
+Responsabilidades:
+• Elaborar e executar casos de teste manuais e testes de regressão
+• Registrar e acompanhar bugs no Jira
+• Participar das cerimônias do Scrum
+Requisitos:
+• Ensino superior completo ou cursando em TI, Sistemas de Informação ou áreas afins
+• Conhecimento em testes de software e documentação de cenários de teste
+• Inglês intermediário
+Diferenciais:
+• Automação de testes com Cypress ou Playwright
+• Certificação CTFL

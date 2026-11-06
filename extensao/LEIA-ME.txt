@@ -1,0 +1,46 @@
+COMPATIBILIDADE DE VAGAS - extensão do Chrome (versão 0.5.5, dicionário 1.7)
+
+INSTALAR
+1. Descompacte o arquivo .zip numa pasta que você não vá apagar.
+2. No Chrome, abra o endereço: chrome://extensions
+3. Ligue o "Modo do desenvolvedor" (canto superior direito).
+4. Clique em "Carregar sem compactação" e escolha a pasta descompactada
+   (a pasta que contém o arquivo manifest.json).
+5. Fixe o ícone da extensão na barra (ícone de quebra-cabeça > alfinete).
+
+CARREGAR O PERFIL (uma vez só)
+1. Clique no ícone da extensão > botão "Meu perfil".
+2. Em "Carregar perfil", escolha o arquivo perfil_exemplo.json (ou o seu próprio perfil).
+3. Clique em "Validar e salvar". Os avisos sobre "autoria de código" são esperados.
+
+USAR
+- Na página da vaga, selecione o texto dos requisitos (ou o anúncio inteiro),
+  clique com o botão direito e escolha "Analisar compatibilidade com meu perfil".
+  O painel lateral abre com o percentual e a lista do que atende e do que falta.
+- Se o site não deixar selecionar, copie o texto e cole no painel, depois clique em "Analisar".
+
+GERAR O CURRÍCULO
+- Depois de analisar uma vaga, confira o campo "Cargo" no painel. Ele vem da primeira
+  linha do texto selecionado; se você selecionou só os requisitos, digite o cargo.
+- Clique em "Currículo português" ou "Currículo inglês".
+- Abre uma página com o currículo montado para aquela vaga. Revise o texto.
+- Para editar, clique em qualquer trecho e digite. O PDF e o Word saem com as suas edições.
+- "Salvar PDF": abre a impressão do Chrome; escolha o destino "Salvar como PDF".
+- "Baixar Word": baixa o arquivo .docx para você editar, se quiser.
+- O currículo só mostra o que o seu perfil comprova. Cursos em andamento aparecem como "em andamento".
+
+TEMA
+- No rodapé do painel: automático (segue o Chrome e o Windows), claro ou escuro.
+
+PRIVACIDADE
+Nada sai do seu navegador. Não usa IA nem internet. O perfil fica salvo só no Chrome.
+
+LICENÇAS DE TERCEIROS
+- Fonte JetBrains Mono: SIL Open Font License (fontes/LICENSE-JetBrainsMono-OFL.txt).
+- Biblioteca docx (geração do Word): licença MIT.
+
+ANOTE PARA TRAZER DE VOLTA
+- O nome do site e o cargo de cada vaga testada.
+- O percentual que apareceu e se ele fez sentido para você.
+- Qualquer requisito que a extensão não reconheceu ou leu errado (copie a frase).
+- Se o clique com o botão direito funcionou em cada site.

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Meu perfil · Compatibilidade de Vagas</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="tema.js"></script>
+</head>
+<body>
+<main>
+  <h1>Meu perfil</h1>
+  <p class="sub">Carregue o arquivo do seu perfil (.json). Ele é conferido antes de ser salvo e fica só neste navegador.</p>
+  <div id="atual" class="cartao" hidden></div>
+  <h2>carregar perfil</h2>
+  <div class="acoes"><label class="botao-arquivo"><input type="file" id="arquivo" accept=".json,application/json" hidden>Escolher arquivo</label><span id="nome-arquivo" class="meta">nenhum arquivo escolhido</span></div>
+  <p class="sub">Ou cole o conteúdo do arquivo:</p>
+  <textarea id="texto" placeholder='{"versao_esquema": "1.0", ...}'></textarea>
+  <div class="acoes">
+    <button id="salvar" class="principal">Validar e salvar</button>
+    <button id="remover">Remover perfil salvo</button>
+  </div>
+  <div id="mensagens"></div>
+  <div class="tema" role="group" aria-label="Tema"><span>tema</span><button data-valor="auto">automático</button><button data-valor="claro">claro</button><button data-valor="escuro">escuro</button></div>
+</main>
+<script src="motor.js"></script>
+<script src="options.js"></script>
+</body>
+</html>

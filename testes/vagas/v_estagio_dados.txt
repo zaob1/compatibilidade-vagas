@@ -1,0 +1,7 @@
+Estágio em Dados
+Requisitos:
+• Cursando ensino superior
+• Python
+• Excel intermediário
+Diferenciais:
+• Power BI
